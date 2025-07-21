@@ -13,7 +13,7 @@ import { useInView } from "react-intersection-observer"; // 👈 Add this
 
 // Slightly decreasing fire accidents
 const barData = [
-  { name: "2014", val: 48 },
+  { name: "2014", val: 20 },
   { name: "2015", val: 40 },
   { name: "2016", val: 38 },
   { name: "2017", val: 42 },

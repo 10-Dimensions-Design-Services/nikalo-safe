@@ -12,9 +12,9 @@ const Home = () => {
       <Navbar />
       <HeroSection />
       <FireStats />
-      {/* <FeaturesSection />
+      <FeaturesSection />
       <CTASection />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
