@@ -12,8 +12,8 @@ const Home = () => {
       <Navbar />
       <HeroSection />
       <FireStats />
-      {/* <FeaturesSection />
-      <CTASection />
+      <FeaturesSection />
+      {/* <CTASection />
       <Footer /> */}
     </div>
   );
