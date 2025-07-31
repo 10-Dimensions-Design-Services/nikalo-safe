@@ -13,7 +13,7 @@ const Home = () => {
       <HeroSection />
       <FireStats />
       <FeaturesSection />
-      <CTASection />
+      {/* <CTASection /> */}
       <Footer />
     </div>
   );
