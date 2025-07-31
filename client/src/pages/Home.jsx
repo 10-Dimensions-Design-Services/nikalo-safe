@@ -14,7 +14,7 @@ const Home = () => {
       <FireStats />
       <FeaturesSection />
       {/* <CTASection /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
