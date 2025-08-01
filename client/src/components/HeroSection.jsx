@@ -31,7 +31,7 @@ const HeroSection = () => {
                      <div className="relative py-12 md:py-24 px-4 md:px-8">
              <div className="max-w-2xl">
                {/* Headline */}
-               <h1 className="title-1 mb-4 md:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+               <h1 className="title-1 mb-4 md:mb-6 text-3xl sm:text-4xl md:text-[32px] lg:text-6xl leading-tight">
                  <span className="text-black">Nikalo Safe – </span>
                  <span className="text-[#F4003B]">
                    Every Life Deserves a Way Out
