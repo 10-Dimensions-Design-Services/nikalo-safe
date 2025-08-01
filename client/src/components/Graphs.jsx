@@ -51,7 +51,7 @@ const radialData = [
   {
     name:  "Info Gap",
     uv: 50,     // This value drives the fill percentage (50% = half circle)
-    fill: "#e63946",  // Red color for fire theme
+    fill: "#F4003B",  // Red color for fire theme
   },
 ];
 
@@ -100,7 +100,7 @@ export default function FireStats() {
       <div className="container-max px-4 md:px-8">
         {/* Section Title */}
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">
-          <span className="text-red-600">Learning </span>from the Past
+          <span className="text-[#F4003B]">Learning </span>from the Past
         </h2>
 
         {/* ============================================================================
@@ -131,7 +131,7 @@ export default function FireStats() {
                   <XAxis dataKey="name" hide />  {/* Hide x-axis labels for cleaner look */}
                   <Bar
                     dataKey="val"
-                    fill="#e63946"              /* Red color for fire theme */
+                    fill="#F4003B"              /* Red color for fire theme */
                     radius={[4, 4, 4, 4]}      /* Rounded top corners */
                     barSize={12}                /* Bar thickness */
                     isAnimationActive={inView}  /* Animate on scroll */
@@ -161,11 +161,11 @@ export default function FireStats() {
                   <Line
                     type="monotone"              /* Smooth curve interpolation */
                     dataKey="val"
-                    stroke="#e63946"              /* Red color for fire theme */
+                    stroke="#F4003B"              /* Red color for fire theme */
                     strokeWidth={1.5}             /* Line thickness */
                     dot={{                       /* Custom dot styling */
                       fill: "#ffffff",            /* White fill */
-                      stroke: "#e63946",          /* Red border */
+                      stroke: "#F4003B",          /* Red border */
                       strokeWidth: 2,             /* Border thickness */
                       r: 2.5,                     /* Dot radius */
                     }}
@@ -206,14 +206,14 @@ export default function FireStats() {
                     clockWise={false}            /* Counter-clockwise direction */
                     dataKey="uv"                 /* Data key for percentage */
                     cornerRadius={10}            /* Rounded corners */
-                    fill="#e63946"               /* Red fill color for fire theme */
+                    fill="#F4003B"               /* Red fill color for fire theme */
                     isAnimationActive={inView}   /* Animate on scroll */
                   />
                 </RadialBarChart>
               </ResponsiveContainer>
               
               {/* Percentage Text Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center text-xs sm:text-sm font-bold text-[#e63946]">
+              <div className="absolute inset-0 flex items-center justify-center text-xs sm:text-sm font-bold text-[#F4003B]">
                 {percentage}%
               </div>
             </div>
