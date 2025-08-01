@@ -51,6 +51,8 @@ const HeroSection = () => {
                    Discover How It Works
                  </button>
                </div>
+               {/* Extra spacing to match FeaturesSection gap */}
+               <div className="mt-6 md:mt-12"></div>
             </div>
           </div>
         </div>

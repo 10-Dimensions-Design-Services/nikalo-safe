@@ -33,7 +33,7 @@ const visualFeatures = [
 const FeaturesSection = () => {
   return (
     // Main section container with white background and vertical padding
-    <section className="pt-0 pb-[98px] bg-white">
+    <section className="pt-0 pb-12 md:pb-24 bg-white">
       {/* Centered container with max width and horizontal padding */}
       <div className="max-w-7xl mx-auto px-4">
         {/* Main Heading */}
@@ -70,7 +70,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* Call-to-Action Button */}
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-6 md:mt-12">
           {/* Styled button with hover effects and brand colors */}
           <button className="bg-white text-[#F4003B] border border-[#F4003B] hover:bg-[#F4003B] hover:text-white transition-colors px-10 py-2.5 rounded-lg font-medium text-lg h-10 flex items-center justify-center">
             Learn More
