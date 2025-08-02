@@ -6,6 +6,7 @@ import VideoSection from '../components/VideoSection';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
 import FireStats from '../components/Graphs';
+import TestimonialSection from '../components/TestimonialSection';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <FireStats />
       <FeaturesSection />
       <VideoSection />
+      <TestimonialSection />
       {/* <CTASection /> */}
       {/* <Footer /> */}
     </div>
