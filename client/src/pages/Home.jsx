@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import FeaturesSection from '../components/FeaturesSection';
 import VideoSection from '../components/VideoSection';
+import TestimonialSection from '../components/TestimonialSection';
+import BrandValueSection from '../components/BrandValueSection';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
 import FireStats from '../components/Graphs';
@@ -15,6 +17,8 @@ const Home = () => {
       <FireStats />
       <FeaturesSection />
       <VideoSection />
+      <TestimonialSection />
+      <BrandValueSection />
       {/* <CTASection /> */}
       {/* <Footer /> */}
     </div>
