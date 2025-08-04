@@ -27,6 +27,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif'],
       },
     },
   },
