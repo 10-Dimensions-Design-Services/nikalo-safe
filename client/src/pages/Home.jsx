@@ -5,6 +5,7 @@ import FeaturesSection from '../components/FeaturesSection';
 import VideoSection from '../components/VideoSection';
 import TestimonialSection from '../components/TestimonialSection';
 import BrandValueSection from '../components/BrandValueSection';
+import Contact from '../components/Contact';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
 import FireStats from '../components/Graphs';
@@ -19,8 +20,9 @@ const Home = () => {
       <VideoSection />
       <TestimonialSection />
       <BrandValueSection />
+      <Contact />
       {/* <CTASection /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

@@ -7,6 +7,18 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToHero = (e) => {
+    e.preventDefault();
+    const heroSection = document.querySelector('#hero-section');
+    if (heroSection) {
+      heroSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="container-max">
@@ -22,7 +34,11 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            <a href="#home" className="text-black hover:text-[#F4003B] transition-colors font-medium px-3 py-2 text-sm xl:text-base">
+            <a 
+              href="#home" 
+              onClick={scrollToHero}
+              className="text-black hover:text-[#F4003B] transition-colors font-medium px-3 py-2 text-sm xl:text-base cursor-pointer"
+            >
               Home
             </a>
             <a href="#about" className="text-black hover:text-[#F4003B] transition-colors font-medium px-3 py-2 text-sm xl:text-base">
@@ -38,7 +54,11 @@ const Navbar = () => {
 
           {/* Tablet Navigation (hidden on mobile and desktop) */}
           <div className="hidden md:flex lg:hidden items-center space-x-4">
-            <a href="#home" className="text-black hover:text-[#F4003B] transition-colors font-medium px-2 py-2 text-sm">
+            <a 
+              href="#home" 
+              onClick={scrollToHero}
+              className="text-black hover:text-[#F4003B] transition-colors font-medium px-2 py-2 text-sm cursor-pointer"
+            >
               Home
             </a>
             <a href="#about" className="text-black hover:text-[#F4003B] transition-colors font-medium px-2 py-2 text-sm">
@@ -76,8 +96,8 @@ const Navbar = () => {
             <div className="px-4 py-4 space-y-2">
               <a 
                 href="#home" 
-                className="block px-4 py-3 text-black hover:text-[#F4003B] hover:bg-gray-50 transition-colors font-medium rounded-lg"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={scrollToHero}
+                className="block px-4 py-3 text-black hover:text-[#F4003B] hover:bg-gray-50 transition-colors font-medium rounded-lg cursor-pointer"
               >
                 Home
               </a>
