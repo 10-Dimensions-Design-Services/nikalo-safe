@@ -35,7 +35,7 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <a 
-              href="/home" 
+              href="/" 
               className="text-black hover:text-[#F4003B] transition-colors font-medium px-3 py-2 text-sm xl:text-base cursor-pointer"
             >
               Home

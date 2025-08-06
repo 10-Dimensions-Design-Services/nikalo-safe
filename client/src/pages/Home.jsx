@@ -7,6 +7,8 @@ import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
 import FireStats from '../components/Graphs';
 import TestimonialSection from '../components/TestimonialSection';
+import BrandValueSection from '../components/BrandValueSection';
+import Contact from '../components/Contact';
 
 const Home = () => {
   return (
@@ -17,8 +19,10 @@ const Home = () => {
       <FeaturesSection />
       <VideoSection />
       <TestimonialSection />
+      <BrandValueSection />
+      <Contact />
       {/* <CTASection /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
