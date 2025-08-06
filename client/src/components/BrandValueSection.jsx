@@ -1,0 +1,175 @@
+import React, { useState } from "react";
+import safetyImage from "../assets/Images/BrandImg.png";
+
+const BrandValueSection = () => {
+  const [showValues, setShowValues] = useState(false);
+  
+  console.log('showValues state:', showValues); // Debug log
+
+  return (
+    <section className="pb-12 md:pb-16 lg:pb-24 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
+        <div className="max-w-[1152px] mx-auto flex flex-col">
+          {/* Top Center Heading */}
+          <div className="text-center mb-6 md:mb-8">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] font-bold leading-tight text-gray-900 px-4">
+              Be the Brand That{" "}
+              <span className="text-red-600">Prioritizes Safety</span> Above All
+            </h2>
+          </div>
+
+          {/* Mobile Layout */}
+          <div className="lg:hidden">
+            <div className="flex justify-center mb-6 px-4">
+              <img
+                src={safetyImage}
+                alt="Nikalo Safe"
+                className="rounded-xl shadow-lg w-full max-w-[300px] sm:max-w-[400px] h-auto aspect-video object-cover"
+              />
+            </div>
+
+            <div className="space-y-4 px-4">
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+                  Make Safety Your Signature Offering
+                </h3>
+                <p className="text-sm sm:text-base font-bold font-rubik text-[#172136]/60 leading-relaxed">
+                  Nikalo Safe isn't just a fire response system, it's a statement.
+                  A commitment to care, foresight, and protection embedded into
+                  your property. When potential buyers or tenants walk in, they
+                  see more than walls, they see responsibility, innovation, and
+                  trust.
+                </p>
+                <p className="text-sm sm:text-base font-bold text-[#172136]/40 mt-3">
+                  Care is the New Cornerstone.
+                </p>
+              </div>
+
+                              {/* Hidden Section that appears on button click */}
+                {showValues === true && (
+                  <div className="grid grid-cols-3 gap-3 mt-6">
+                    <div className="aspect-square p-3 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                      <h4 className="font-bold text-gray-900 mb-1 text-center text-xs">
+                        Enhanced Marketability
+                      </h4>
+                      <p className="text-gray-600 text-[10px] text-center leading-tight">
+                        Highlighting Nikalo Safe as a key feature can attract
+                        safety-conscious buyers and tenants.
+                      </p>
+                    </div>
+
+                    <div className="aspect-square p-3 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                      <h4 className="font-bold text-gray-900 mb-1 text-center text-xs">
+                        Positive Reputation
+                      </h4>
+                      <p className="text-gray-600 text-[10px] text-center leading-tight">
+                        Demonstrating a proactive approach to fire safety enhances
+                        your reputation as a responsible developer.
+                      </p>
+                    </div>
+
+                    <div className="aspect-square p-3 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                      <h4 className="font-bold text-gray-900 mb-1 text-center text-xs">
+                        Meeting Regulatory Requirements
+                      </h4>
+                      <p className="text-gray-600 text-[10px] text-center leading-tight">
+                        Nikalo Safe can assist in meeting and exceeding fire safety
+                        regulations, ensuring compliance.
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+              {/* Button */}
+              <button
+                onClick={() => setShowValues(!showValues)}
+                className="w-full sm:w-auto sm:min-w-[200px] h-10 border-2 border-red-600 text-red-600 rounded-md font-medium hover:bg-red-600 hover:text-white transition duration-300 text-sm mt-4"
+              >
+                {showValues ? "Hide Values" : "Learn How It Adds Value"}
+              </button>
+            </div>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-start">
+            {/* Left Content */}
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-[24px] font-bold text-gray-900 mb-3">
+                  Make Safety Your Signature Offering
+                </h3>
+                <p className="text-[18px] font-bold font-rubik text-[#172136]/60 leading-relaxed">
+                  Nikalo Safe isn't just a fire response system, it's a statement.
+                  A commitment to care, foresight, and protection embedded into
+                  your property. When potential buyers or tenants walk in, they
+                  see more than walls, they see responsibility, innovation, and
+                  trust.
+                </p>
+                <p className="text-[18px] font-bold text-[#172136]/40 mt-4">
+                  Care is the New Cornerstone.
+                </p>
+              </div>
+
+              {/* Hidden Section for desktop */}
+              {showValues === true && (
+                <div className="grid grid-cols-3 gap-4 mt-6">
+                  <div className="aspect-square p-4 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-center text-sm">
+                      Enhanced Marketability
+                    </h4>
+                    <p className="text-gray-600 text-xs text-center">
+                      Highlighting Nikalo Safe as a key feature can attract
+                      safety-conscious buyers and tenants, differentiating your
+                      properties from competition.
+                    </p>
+                  </div>
+                  <div className="aspect-square p-4 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-center text-sm">
+                      Positive Reputation
+                    </h4>
+                    <p className="text-gray-600 text-xs text-center">
+                      Demonstrating a proactive approach to fire safety enhances
+                      your reputation as a responsible and forward-thinking developer.
+                    </p>
+                  </div>
+                  <div className="aspect-square p-4 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-center text-sm">
+                      Meeting Regulatory Requirements
+                    </h4>
+                    <p className="text-gray-600 text-xs text-center">
+                      Nikalo Safe can assist in meeting and exceeding fire safety
+                      regulations, ensuring compliance and minimizing penalties.
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {/* Button */}
+              <button
+                onClick={() => setShowValues(!showValues)}
+                className="min-w-[228px] h-[40px] border-2 border-red-600 text-red-600 rounded-md font-medium hover:bg-red-600 hover:text-white transition duration-300 text-base mt-4"
+              >
+                {showValues ? "Hide Values" : "Learn How It Adds Value"}
+              </button>
+            </div>
+
+            {/* Right Image */}
+            <div className="flex justify-end">
+              <img
+                src={safetyImage}
+                alt="Nikalo Safe"
+                className={`rounded-2xl shadow-lg object-cover transition-all duration-300 ${
+                  showValues 
+                    ? 'w-[400px] h-[335px]' 
+                    : 'w-[542px] h-[455px]'
+                }`}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BrandValueSection;

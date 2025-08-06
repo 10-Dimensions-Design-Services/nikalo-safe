@@ -1,53 +1,36 @@
-# Logo Assets
+# Images Assets
 
-This folder contains the logo assets for Nikalo Safe.
+This directory contains all the image assets used in the NikaloSafe website.
 
-## Available Logo Variants
+## Current Images
 
-### 1. `logo.svg` (40x40)
-- **Size**: 40x40 pixels
-- **Usage**: Primary logo for navigation bars and small spaces
-- **Features**: Shield design with lock icon, blue color scheme
+- `logo.svg` - Main logo (SVG format)
+- `logo-large.svg` - Large version of the logo (SVG format)
+- `HeroImageForHomePage.jpg` - Hero image for the home page
 
-### 2. `logo-large.svg` (60x60)
-- **Size**: 60x60 pixels
-- **Usage**: Larger contexts where more detail is needed
-- **Features**: Same design as logo.svg but larger for better visibility
+## Current Images
 
-### 3. `logo-text.svg` (200x40)
-- **Size**: 200x40 pixels
-- **Usage**: Full logo with company name for headers and branding
-- **Features**: Shield icon + "Nikalo Safe" text
+- `logo.svg` - Main logo (SVG format)
+- `logo-large.svg` - Large version of the logo (SVG format)
+- `HeroImageForHomePage.jpg` - Hero image for the home page
+- `about-hero-image.png` - Hero image for the About Us page
+  - Description: Dramatic hero section with firefighters and evacuation technology
+  - Features: Dark smoky background, firefighter with tablet showing building evacuation routes
+  - Size: Recommended 1920x1080px or larger for high quality
+  - Format: PNG with transparency support
 
-## Design Elements
+## Usage
 
-- **Shield**: Represents security and protection
-- **Lock Icon**: Symbolizes data encryption and access control
-- **Color Scheme**: 
-  - Primary Blue: #3B82F6
-  - Dark Blue: #1E40AF
-  - White: #FFFFFF
+Images in this folder are referenced in the React components using the `/assets/images/` path prefix.
 
-## Usage in Components
-
+Example:
 ```jsx
-// For navigation bar
-<img src="/assets/images/logo.svg" alt="Nikalo Safe Logo" className="w-8 h-8" />
-
-// For larger contexts
-<img src="/assets/images/logo-large.svg" alt="Nikalo Safe Logo" className="w-12 h-12" />
-
-// For full branding
-<img src="/assets/images/logo-text.svg" alt="Nikalo Safe" className="h-8" />
+<img src="/assets/images/about-hero-image.png" alt="About Us Hero" />
 ```
 
-## File Structure
+## Image Guidelines
 
-```
-assets/
-└── images/
-    ├── logo.svg          # Standard logo (40x40)
-    ├── logo-large.svg    # Large logo (60x60)
-    ├── logo-text.svg     # Logo with text (200x40)
-    └── README.md         # This file
-``` 
+- Use appropriate file formats (SVG for logos, JPG/PNG for photos)
+- Optimize images for web use to maintain fast loading times
+- Include descriptive alt text in components
+- Maintain consistent naming conventions 

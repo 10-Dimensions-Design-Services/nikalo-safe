@@ -21,7 +21,7 @@ const visualFeatures = [
   },
   {
     id: 3,
-    title: "Firefighter In System",
+    title: "Firefighter Insight System",
     description:
       "Automatically alerts fire teams with building information layouts, models, danger zones, and safe entry-exit paths, speeding up response and saving more lives.",
     image: feature3,
@@ -72,9 +72,9 @@ const FeaturesSection = () => {
         {/* Call-to-Action Button */}
         <div className="flex justify-center mt-6 md:mt-12">
           {/* Styled button with hover effects and brand colors */}
-          <button className="bg-white text-[#F4003B] border border-[#F4003B] hover:bg-[#F4003B] hover:text-white transition-colors px-10 py-2.5 rounded-lg font-medium text-lg h-10 flex items-center justify-center">
+          {/* <button className="bg-white text-[#F4003B] border border-[#F4003B] hover:bg-[#F4003B] hover:text-white transition-colors px-10 py-2.5 rounded-lg font-medium text-lg h-10 flex items-center justify-center">
             Learn More
-          </button>
+          </button> */}
         </div>
       </div>
     </section>
