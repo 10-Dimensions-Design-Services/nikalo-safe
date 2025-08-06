@@ -41,11 +41,11 @@ const Navbar = () => {
             >
               Home
             </a>
-            <a href="#about" className="text-black hover:text-[#F4003B] transition-colors font-medium px-3 py-2 text-sm xl:text-base">
+            <a href="/about" className="text-black hover:text-[#F4003B] transition-colors font-medium px-3 py-2 text-sm xl:text-base">
               About Us
             </a>
-            <a href="#services" className="text-black hover:text-[#F4003B] transition-colors font-medium px-3 py-2 text-sm xl:text-base">
-              Services
+            <a href="/solution" className="text-black hover:text-[#F4003B] transition-colors font-medium px-3 py-2 text-sm xl:text-base">
+            solution
             </a>
                          <button className="bg-white text-[#F4003B] border border-[#F4003B] hover:bg-[#F4003B] hover:text-white transition-colors font-medium h-10 px-4 xl:px-6 rounded-xl text-sm xl:text-base">
                Contact Us

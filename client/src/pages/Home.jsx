@@ -21,7 +21,8 @@ const Home = () => {
       <TestimonialSection />
       <BrandValueSection />
       <Contact />
-      {/* <CTASection /> */}
+      {/* <CTASection /> */} 
+      
       <Footer />
     </div>
   );
