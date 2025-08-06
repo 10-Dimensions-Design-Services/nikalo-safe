@@ -4,10 +4,12 @@
   --primary-light: #FFE6EA;
   --primary-lighter: #FFF0F2;
   --black-color: #172136;
-  --white-color: #F5F7FA;
+  --white-color: #F5F7FA; 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -17,11 +19,18 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
+  /* Apply Rubik globally as default */
   body {
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply font-rubik;
+  }
+
+  /* Override headings to use Inter */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter;
   }
 }
+
 
 @layer components {
   /* Text Palette */

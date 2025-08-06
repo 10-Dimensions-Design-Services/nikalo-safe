@@ -26,10 +26,11 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        rubik: ['Rubik', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'], // Default
+        inter: ['Inter', 'sans-serif'],             // Use via class: font-inter
+        rubik: ['Rubik', 'sans-serif'],             // Use via class: font-rubik
       },
     },
   },
   plugins: [],
-} 
+}
