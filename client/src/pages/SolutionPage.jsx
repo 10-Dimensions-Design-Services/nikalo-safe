@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import SolutionHeroSection from "../components/SolutionHeroSection";
 import SolutionsSection from "../components/SolutionsSection";
-import ContactSection from  "../components/GetStartedSection";
+import Contact from  "../components/Contact";
 import Footer from "../components/Footer";
 
 
@@ -11,7 +11,7 @@ const Solutions = () => {
       <Navbar />
       <SolutionHeroSection />
       <SolutionsSection />
-      <ContactSection />
+      <Contact />
       <Footer />
     </>
   );

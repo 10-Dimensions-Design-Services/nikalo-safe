@@ -26,12 +26,12 @@ const SolutionsSection = () => {
     <section className="bg-white pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
-          <span className="text-[#F4003B]">Solutions </span>
-          <span className="text-black">We Provide</span>
+          <span className="text-primary title-h2">Solutions </span>
+          <span className="text-black title-h2">We Provide</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {solutionCards.map((card, index) => (
+          {solutionCards.map((card, index) => (
             <div
               key={index}
               className="h-[514px] flex flex-col bg-white rounded-lg overflow-hidden shadow-lg border"
@@ -39,21 +39,21 @@ const SolutionsSection = () => {
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-full h-[354px] object-cover"
+                className="w-full h-[354px] object-cover object-right"
               />
-              <div className="bg-[#0047AB] text-white py-4 px-6 h-[160px] flex flex-col justify-center">
-                <h3 className="text-base sm:text-lg font-semibold mb-4 text-center">
+              <div className="bg-secondary text-white px-6 py-4 h-[160px] flex flex-col justify-center gap-y-4">
+                <h3 className="text-base sm:text-lg title-h3 text-center flex items-end justify-center">
                   {card.title}
                 </h3>
-                <p className="text-sm text-center">{card.description}</p>
+                <p className="paragraph-regular text-center h-[64px] flex items-start justify-center">
+                  {card.description}
+                </p>
               </div>
             </div>
           ))}
-          
-
-
-
         </div>
+
+
       </div>
     </section>
   );
