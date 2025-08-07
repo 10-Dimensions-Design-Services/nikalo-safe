@@ -19,7 +19,7 @@ const AboutUs = () => {
             className="relative bg-cover bg-center bg-no-repeat rounded-lg w-full"
             style={{
               backgroundImage: "url('/assets/images/about-hero-image.jpg')",
-              minHeight: '600px',
+              minHeight: '720px',
             }}
           >
             <div
