@@ -1,10 +1,9 @@
-// src/components/FeedbackCarousel.jsx
 import React, { useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import feedbackuser1 from '../assets/Images/shashank sir.jpeg';
 import feedbackuser2 from '../assets/Images/Vishwajisir.jpeg';
-import feedbackuser3 from '../assets/Images/user2.jpg'
-import feedbackuser4 from '../assets/Images/istockphoto-1348209421-612x612.jpg'
+import feedbackuser3 from '../assets/Images/user2.jpg';
+import feedbackuser4 from '../assets/Images/istockphoto-1348209421-612x612.jpg';
 
 const feedbacks = [
   {
@@ -31,7 +30,7 @@ const feedbacks = [
     text: `In high-stress situations, clear direction can prevent panic and save lives. A solution like this will help universities manage large-scale evacuations efficiently. It can offer students and faculty the confidence that their safety is prioritized. `,
     name: 'Dr. Kavita Sharma',
     profession: 'Dean, NIM, Delhi, India',
-  }, 
+  },
 ];
 
 const FeedbackCarousel = () => {
@@ -43,22 +42,20 @@ const FeedbackCarousel = () => {
 
   return (
     <section
-      className="relative mx-auto my-16"
-      style={{
-        width: '1153px',
-        height: '707px',
-        maxWidth: '100%',
-      }}
+      className="relative mx-auto my-16 w-full max-w-[1150px] px-4 sm:px-6"
+      // max-w caps at 1150px, with padding on smaller screens
+      style={{ aspectRatio: '1153 / 707' }} // maintain same aspect ratio for responsiveness
     >
       {/* Background image */}
       <div
         className="absolute inset-0 rounded-lg"
         style={{
           background: `url('/assets/images/feedback section background.jpg') center/cover no-repeat`,
+          filter: 'brightness(0.8)',
         }}
       />
 
-      {/* Stronger overlay gradient for contrast */}
+      {/* Strong gradient overlay */}
       <div
         className="absolute inset-0 rounded-lg"
         style={{
@@ -73,39 +70,42 @@ const FeedbackCarousel = () => {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-white text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 px-2 sm:px-0">
           Innovation <span className="text-[#F4003B]">Feedback</span>
         </h2>
 
         <img
           src={photo}
           alt={name}
-          className="w-24 h-24 rounded-full object-cover border-4 border-white mb-6"
+          className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-white mb-6"
+          loading="lazy"
         />
 
-        <p className="max-w-[800px] text-sm sm:text-base leading-relaxed mb-4">
+        <p className="max-w-full sm:max-w-3xl text-[0.85rem] sm:text-base leading-relaxed mb-4 px-4 sm:px-0">
           {text}
         </p>
-        <p className="font-medium">{name}</p>
-        <p className="text-xs opacity-75 mb-4">{profession}</p>
+        <p className="font-medium text-base sm:text-lg">{name}</p>
+        <p className="text-xs sm:text-sm opacity-75 mb-4">{profession}</p>
 
-        <button className="px-4 py-2 bg-white text-[#333] rounded-full font-medium hover:bg-gray-100 transition">
+        <button className="px-6 py-2 bg-white text-[#333] rounded-full font-medium hover:bg-gray-100 transition mb-6 sm:mb-12">
           Add Yours
         </button>
 
         {/* Arrows */}
         <button
           onClick={prev}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 bg-black bg-opacity-50 rounded-full"
+          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 bg-black bg-opacity-50 rounded-full hover:bg-opacity-75 transition"
+          aria-label="Previous feedback"
         >
-          <ChevronLeftIcon size={24} />
+          <ChevronLeftIcon size={20} sm={24} />
         </button>
         <button
           onClick={next}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 bg-black bg-opacity-50 rounded-full"
+          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 bg-black bg-opacity-50 rounded-full hover:bg-opacity-75 transition"
+          aria-label="Next feedback"
         >
-          <ChevronRightIcon size={24} />
+          <ChevronRightIcon size={20} sm={24} />
         </button>
       </div>
     </section>
