@@ -3,12 +3,13 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import FeaturesSection from '../components/FeaturesSection';
 import VideoSection from '../components/VideoSection';
-import CTASection from '../components/CTASection';
-import Footer from '../components/Footer';
-import FireStats from '../components/Graphs';
 import TestimonialSection from '../components/TestimonialSection';
 import BrandValueSection from '../components/BrandValueSection';
 import Contact from '../components/Contact';
+import CTASection from '../components/CTASection';
+import Footer from '../components/Footer';
+import FireStats from '../components/Graphs';
+
 
 const Home = () => {
   return (
@@ -21,7 +22,8 @@ const Home = () => {
       <TestimonialSection />
       <BrandValueSection />
       <Contact />
-      {/* <CTASection /> */}
+      {/* <CTASection /> */} 
+      
       <Footer />
     </div>
   );

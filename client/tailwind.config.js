@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -7,29 +8,28 @@ module.exports = {
     extend: {
       colors: {
         primary: 'var(--primary-color)',
-        'primary-dark': 'var(--primary-dark)',
-        'primary-50': 'var(--primary-lighter)',
-        'primary-100': 'var(--primary-light)',
+        secondary: 'var(--secondary-color)', // ← use the CSS variable here
         black: 'var(--black-color)',
         white: 'var(--white-color)',
-        secondary: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',
-          500: '#64748b',
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
-        }
       },
+
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        // Defaults
+        sans: ['Rubik', 'sans-serif'],      // Use Rubik as global
+        inter: ['Inter', 'sans-serif'],     // For headings
         rubik: ['Rubik', 'sans-serif'],
+      },
+
+      fontSize: {
+        // Typography system
+        'h1': ['48px', { lineHeight: '56px' }],
+        'h2': ['32px', { lineHeight: '40px' }],
+        'h3': ['24px', { lineHeight: '32px' }],
+        'h4': ['18px', { lineHeight: '28px' }],
+        'p-bold': ['16px', { lineHeight: '28px' }],
+        'p-regular': ['16px', { lineHeight: '24px' }],
       },
     },
   },
   plugins: [],
-} 
+}

@@ -17,8 +17,6 @@ const Footer = () => {
             <p className="text-gray-600 flex items-center justify-center sm:justify-start gap-1 md:gap-2 text-xs md:text-sm mb-2 md:mb-4">
               <Phone className="w-3 h-3 md:w-4 md:h-4 text-red-600" /> +918390703746
             </p>
-
-            {/* Social Icons */}
             <div className="flex gap-3 md:gap-4 justify-center sm:justify-start text-red-600">
               <a href="#"><FaInstagram className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
               <a href="#"><FaLinkedin className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
