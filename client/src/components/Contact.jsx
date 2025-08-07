@@ -36,9 +36,12 @@ const Contact = () => {
           </div>
 
           {/* Phone */}
-          <div className="flex items-center gap-4">
-            <Phone className="text-red-600 w-6 h-6" />
-            <p className="text-gray-800 font-medium">+918390703746</p>
+          <div className="flex items-start gap-4">
+            <Phone className="text-red-600 w-6 h-6 mt-1" />
+            <div className="text-gray-800 font-medium">
+              <p>+918390703746</p>
+              <p>+918329709173</p>
+            </div>
           </div>
         </div>
       </div>

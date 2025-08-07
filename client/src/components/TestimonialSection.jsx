@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import user1 from '../assets/Images/shashank sir.jpeg'
 import user2 from '../assets/Images/user2.jpg'
 
+
 const testimonials = [
   {
     name: "Shashank Kulkarni",
