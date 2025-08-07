@@ -24,14 +24,14 @@ const AboutUs = () => {
     >
       <div className="absolute inset-0 rounded-lg" style={{ background: 'rgba(0,0,0,0.5)', zIndex: 1 }} />
       <div className="relative py-8 md:py-20 px-2 sm:px-6 md:px-12 z-10 max-w-2xl">
-        <h1 className="title-1 mb-4 md:mb-6 text-3xl sm:text-4xl md:text-[32px] lg:text-6xl leading-tight">
+        <h1 className="title-h1 mb-4 md:mb-6 text-3xl sm:text-4xl md:text-[32px] lg:text-6xl leading-tight">
           <span className="text-white">About </span>
-          <span className="text-[#F4003B]">Us</span>
+          <span className="text-primary">Us</span>
         </h1>
-        <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold mb-4 md:mb-6 text-white">
+        <h2 className="title-h3 md:text-2xl lg:text-3xl mb-4 md:mb-6 text-white">
           Evacuate Smart, Evacuate Safe with Nikalo Safe
         </h2>
-        <p className="title-3 mb-6 md:mb-8 text-base sm:text-lg md:text-xl leading-relaxed w-full text-white max-w-md">
+        <p className="paragraph-regular mb-6 md:mb-8 text-base sm:text-lg md:text-xl leading-relaxed w-full text-white max-w-md">
           In emergency situations, clear and accessible escape routes are vital. Our smart evacuation system guides you through the safest route during emergencies and leads to the safe path and away from danger.
         </p>
       </div>
@@ -51,11 +51,11 @@ const AboutUs = () => {
             />
           </div>
           <div className="w-full md:w-1/2 space-y-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
-              <span className="text-[#F4003B]">Nikalo Safe:</span>{' '}
+            <h2 className="title-h2 sm:text-3xl lg:text-4xl">
+              <span className="text-primary">Nikalo Safe:</span>{' '}
               <span className="text-black">A Name with Purpose</span>
             </h2>
-            <p className="text-base sm:text-lg leading-relaxed">
+            <p className="paragraph-bold sm:text-lg leading-relaxed">
               The brand name <strong>"Nikalo Safe"</strong> carries a dual meaning in Hindi that reflects the very essence of our mission.
             </p>
             <ul className="list-disc list-inside space-y-2 text-base sm:text-lg leading-relaxed">
@@ -74,14 +74,14 @@ const AboutUs = () => {
       <section id="mission" className="py-10 md:py-16 px-4 md:px-8 lg:px-16 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2 space-y-4 mt-7 md:mt-0">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+            <h2 className="title-h2 md:text-3xl lg:text-4xl">
               <span className="text-black">Our </span>
-              <span className="text-[#F4003B]">Mission</span>
+              <span className="text-primary">Mission</span>
             </h2>
-            <p className="text-base sm:text-lg leading-relaxed text-[#6d6d6d]">
+            <p className="paragraph-bold sm:text-lg leading-relaxed">
               At Nikalo Safe, our mission is to deliver real-time, building-specific fire escape guidance through smart technology — ensuring no one is ever left without direction in an emergency.
             </p>
-            <ul className="list-disc list-inside space-y-2 text-base sm:text-lg leading-relaxed text-[#6d6d6d]">
+            <ul className="paragraph-regular list-disc list-inside space-y-2 text-base sm:text-lg leading-relaxed">
               <li>Every life finds a clear way out in emergencies.</li>
               <li>Every building is equipped with smart evacuation guidance.</li>
               <li>Every person feels empowered and guided during disasters.</li>
@@ -112,9 +112,9 @@ const AboutUs = () => {
       {/* Leadership Team Section */}
       <section id="leadership" className="py-10 md:py-16 px-4 md:px-8 lg:px-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold mb-10 md:mb-12">
+          <h2 className="text-center title-h2 sm:text-3xl lg:text-4xl mb-10 md:mb-12">
             <span className="text-black">Our </span>
-            <span className="text-[#F4003B]">Leadership Team</span>
+            <span className="text-primary">Leadership Team</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
             {/* Card 1 */}
@@ -129,12 +129,12 @@ const AboutUs = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg font-bold text-[#0046BE]">Mr. Dharmendra Patil</h3>
-              <p className="text-[#F4003B] font-semibold">Founder & Director</p>
-              <p className="text-sm text-[#6d6d6d] mb-4">
+              <h3 className="title-h4 font-bold text-[#0046BE]">Mr. Dharmendra Patil</h3>
+              <p className="text-primary font-semibold">Founder & Director</p>
+              <p className="paragraph-regular text-sm text-primary mb-4">
                 CPI Digital Transformation and AI for Leaders, IIM Indore
               </p>
-              <p className="text-sm text-[#6d6d6d] leading-relaxed overflow-hidden">
+              <p className="paragraph-regular text-[#6d6d6d] leading-relaxed overflow-hidden">
                 The visionary with decades of experience in various technologies and processes implementation during fire and life safety design, construction and facility management in the buildings, industries and infrastructure sector. He is the innovator of “Digital Twin – Based System and Method for Disaster Management” with patent application number: 202421054472 PCT International Application Number: PCT/IN2025/051041
               </p>
             </div>
@@ -151,12 +151,12 @@ const AboutUs = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg font-bold text-[#0046BE]">Mr. Maniteja Sundara</h3>
-              <p className="text-[#F4003B] font-semibold">Co-founder & Director</p>
-              <p className="text-sm text-[#6d6d6d] mb-4">
+              <h3 className="title-h4 font-bold text-[#0046BE]">Mr. Maniteja Sundara</h3>
+              <p className="text-primary font-semibold">Co-founder & Director</p>
+              <p className="text-sm text-primary mb-4">
                 PG Diploma in the Business Management, NMIMS
               </p>
-              <p className="text-sm text-[#6d6d6d] leading-relaxed overflow-hidden">
+              <p className="paragraph-regular text-[#6d6d6d] leading-relaxed overflow-hidden">
                 Mechanical Engineer with experience in applying advanced technologies such as Digital Twin, Smart Facility Management, IoT, Augmented Reality (AR), Virtual Reality (VR), and Cloud-based BIM collaboration platforms. Knowledgeable in integrating trends like building analytics, predictive maintenance, and sustainability-focused design. Skilled in the design and implementation of fire fighting systems across all types of buildings.
               </p>
             </div>
@@ -166,13 +166,13 @@ const AboutUs = () => {
 
       {/* Get Started Section */}
       <section className="py-10 md:py-16 px-4 md:px-8 lg:px-16 bg-white text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
-          Let’s get <span className="text-[#F4003B]">started</span>
+        <h2 className="title-h2 mb-4 md:mb-6">
+          Let’s get <span className="text-primary">started</span>
         </h2>
-        <p className="max-w-2xl md:max-w-3xl mx-auto text-base sm:text-lg leading-relaxed mb-8 text-[#1F2937]">
+        <p className="max-w-2xl md:max-w-3xl mx-auto paragraph-regular leading-relaxed mb-8 text-[#1F2937]">
           Take safety into your own hands with Nikalo Safe – your emergency evacuation guide. Harness the power of intelligent navigation to protect lives during fires, gas leaks, and critical emergencies. Save time, prevent panic, and ensure safe escapes with cutting-edge, AI-driven technology. Join the safety revolution now and make every second count!
         </p>
-        <button className="px-6 py-3 border-2 border-[#F4003B] text-[#F4003B] rounded-full font-medium hover:bg-[#F4003B] hover:text-white transition">
+        <button className="px-6 py-3 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-white transition">
           Contact Us
         </button>
       </section>
