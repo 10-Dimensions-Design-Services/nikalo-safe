@@ -4,8 +4,8 @@ import Footer from '../components/Footer';
 import FeedbackCarousel from '../components/FeedbackCarousel';
 import purposeImage from '../assets/Images/namepurpose.png';
 import missionImage from '../assets/Images/mission.png';
-import TeamImg1 from '../assets/Images/dpsir.jpg';
-import TeamImg2 from '../assets/Images/Manisir.jpg';
+import TeamImg1 from '../assets/Images/Dpsir.jpeg';
+import TeamImg2 from '../assets/Images/Manisir.jpeg';
 
 const AboutUs = () => {
   return (
@@ -111,49 +111,61 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Leadership Team Section */}
-      <section id="leadership" className="py-16 px-4 md:px-8 lg:px-16 bg-white pb-24">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold mb-12">
-            <span className="text-black">Our </span>
-            <span className="text-[#F4003B]">Leadership Team</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
-            {/* Card 1 */}
-            <div className="bg-[#FDFDFE] rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center w-full sm:w-[501px] h-auto p-8">
-              <img
-                src={TeamImg1}
-                alt="Dharmendra Patil Sir"
-                className="w-40 h-40 object-cover rounded-full mb-6"
-              />
-              <h3 className="text-lg font-bold text-[#0046BE]">Mr. Dharmendra Patil</h3>
-              <p className="text-[#F4003B] font-semibold">Founder & Director</p>
-              <p className="text-sm text-[#6d6d6d] mb-4">
-                CPI Digital Transformation and AI for Leaders, IIM Indore
-              </p>
-              <p className="text-sm text-[#6d6d6d] h-[182px] leading-relaxed overflow-hidden">
-                The visionary with decades of experience in various technologies and processes implementation during fire and life safety design, construction and facility management in the buildings, industries and infrastructure sector. He is the innovator of “Digital Twin – Based System and Method for Disaster Management” with patent application number: 202421054472 PCT International Application Number: PCT/IN2025/051041
-              </p>
-            </div>
-            {/* Card 2 */}
-            <div className="bg-[#FDFDFE] rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center w-full sm:w-[501px] h-auto p-8">
-              <img
-                src={TeamImg2}
-                alt="Maniteja Sundara"
-                className="w-40 h-40 object-cover rounded-full mb-6"
-              />
-              <h3 className="text-lg font-bold text-[#0046BE]">Mr. Maniteja Sundara</h3>
-              <p className="text-[#F4003B] font-semibold">Co-founder & Director</p>
-              <p className="text-sm text-[#6d6d6d] mb-4">
-                PG Diploma in the Business Management, NMIMS
-              </p>
-              <p className="text-sm text-[#6d6d6d] h-[182px] leading-relaxed overflow-hidden">
-                Mechanical Engineer with experience in applying advanced technologies such as Digital Twin, Smart Facility Management, IoT, Augmented Reality (AR), Virtual Reality (VR), and Cloud-based BIM collaboration platforms. Knowledgeable in integrating trends like building analytics, predictive maintenance, and sustainability-focused design. Skilled in the design and implementation of fire fighting systems across all types of buildings.
-              </p>
-            </div>
-          </div>
+{/* Leadership Team Section */}
+<section id="leadership" className="py-16 px-4 md:px-8 lg:px-16 bg-white pb-24">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold mb-12">
+      <span className="text-black">Our </span>
+      <span className="text-[#F4003B]">Leadership Team</span>
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+      {/* Card 1 */}
+      <div className="bg-[#FDFDFE] rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center w-full sm:w-[501px] h-auto p-8">
+        <div
+          className="rounded-full overflow-hidden mb-6"
+          style={{ width: '225.67px', height: '225.67px' }}
+        >
+          <img
+            src={TeamImg1}
+            alt="Dharmendra Patil Sir"
+            className="w-full h-full object-cover"
+          />
         </div>
-      </section>
+        <h3 className="text-lg font-bold text-[#0046BE]">Mr. Dharmendra Patil</h3>
+        <p className="text-[#F4003B] font-semibold">Founder & Director</p>
+        <p className="text-sm text-[#6d6d6d] mb-4">
+          CPI Digital Transformation and AI for Leaders, IIM Indore
+        </p>
+        <p className="text-sm text-[#6d6d6d] h-[182px] leading-relaxed overflow-hidden">
+          The visionary with decades of experience in various technologies and processes implementation during fire and life safety design, construction and facility management in the buildings, industries and infrastructure sector. He is the innovator of “Digital Twin – Based System and Method for Disaster Management” with patent application number: 202421054472 PCT International Application Number: PCT/IN2025/051041
+        </p>
+      </div>
+
+      {/* Card 2 */}
+      <div className="bg-[#FDFDFE] rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center w-full sm:w-[501px] h-auto p-8">
+        <div
+          className="rounded-full overflow-hidden mb-6"
+          style={{ width: '225.67px', height: '225.67px' }}
+        >
+          <img
+            src={TeamImg2}
+            alt="Maniteja Sundara"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <h3 className="text-lg font-bold text-[#0046BE]">Mr. Maniteja Sundara</h3>
+        <p className="text-[#F4003B] font-semibold">Co-founder & Director</p>
+        <p className="text-sm text-[#6d6d6d] mb-4">
+          PG Diploma in the Business Management, NMIMS
+        </p>
+        <p className="text-sm text-[#6d6d6d] h-[182px] leading-relaxed overflow-hidden">
+          Mechanical Engineer with experience in applying advanced technologies such as Digital Twin, Smart Facility Management, IoT, Augmented Reality (AR), Virtual Reality (VR), and Cloud-based BIM collaboration platforms. Knowledgeable in integrating trends like building analytics, predictive maintenance, and sustainability-focused design. Skilled in the design and implementation of fire fighting systems across all types of buildings.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Get Started Section */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-white text-center pb-24">
