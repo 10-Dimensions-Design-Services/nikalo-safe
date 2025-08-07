@@ -62,7 +62,7 @@ const Navbar = () => {
             <a href="/about" className="text-black hover:text-primary transition-colors font-medium px-2 py-2 text-sm">
               About
             </a>
-            <a href="/solution" className="text-black hover:text-primary transition-colors font-medium px-2 py-2 text-sm">
+            <a href="/solutions" className="text-black hover:text-primary transition-colors font-medium px-2 py-2 text-sm">
               Solutions
             </a>
             <button className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors font-medium h-9 px-4 rounded-xl text-sm">
@@ -106,7 +106,7 @@ const Navbar = () => {
                 About Us
               </a>
               <a 
-                href="/solution" 
+                href="/solutions" 
                 className="block px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
