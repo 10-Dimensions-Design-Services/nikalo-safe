@@ -71,8 +71,8 @@ const FeedbackCarousel = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 px-2 sm:px-0">
-          Innovation <span className="text-[#F4003B]">Feedback</span>
+        <h2 className="title-h2 mb-8 px-2">
+          Innovation <span className="text-primary">Feedback</span>
         </h2>
 
         <img
@@ -82,13 +82,13 @@ const FeedbackCarousel = () => {
           loading="lazy"
         />
 
-        <p className="max-w-full sm:max-w-3xl text-[0.85rem] sm:text-base leading-relaxed mb-4 px-4 sm:px-0">
+        <p className="max-w-full sm:max-w-3xl paragraph-regular leading-relaxed mb-4 px-4 sm:px-0">
           {text}
         </p>
-        <p className="font-medium text-base sm:text-lg">{name}</p>
-        <p className="text-xs sm:text-sm opacity-75 mb-4">{profession}</p>
+        <p className="paragraph-bold">{name}</p>
+        <p className="paragraph-regular">{profession}</p>
 
-        <button className="px-6 py-2 bg-white text-[#333] rounded-full font-medium hover:bg-gray-100 transition mb-6 sm:mb-12">
+        <button className="px-6 py-2 bg-white text-[#333] rounded-full font-medium hover:bg-gray-100 transition mt-2 mb-6 sm:mb-12">
           Add Yours
         </button>
 
