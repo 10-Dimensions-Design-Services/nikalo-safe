@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden">
+    <section id="hero-section" className="relative overflow-hidden">
       <div className="container-max">
         <div
           className="relative bg-cover bg-center bg-no-repeat rounded-lg"

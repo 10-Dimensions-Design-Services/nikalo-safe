@@ -45,13 +45,13 @@ const FeaturesSection = () => {
 
         {/* Feature Cards Grid */}
         {/* Responsive grid: 1 column on mobile, 2 on tablet, 3 on desktop */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-9 justify-items-center">
           {/* Map through features array to render individual cards */}
           {visualFeatures.map((feature) => (
             <div
               key={feature.id}
-              // Responsive card styling
-              className="bg-gray-50 hover:bg-white rounded-xl w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] h-auto min-h-[320px] sm:min-h-[380px] md:min-h-[440px] p-4 sm:p-5 md:p-6 flex flex-col items-center transition-transform hover:scale-105 duration-300 shadow-[1px_2px_8px_rgba(0,0,0,0.25)]">
+              // Responsive card styling - 90% width on mobile, constrained on larger screens
+              className="bg-gray-50 hover:bg-white rounded-xl w-[90%] sm:max-w-[320px] md:max-w-[380px] h-auto min-h-[320px] sm:min-h-[380px] md:min-h-[440px] p-4 sm:p-5 md:p-6 flex flex-col items-center transition-transform hover:scale-105 duration-300 shadow-[1px_2px_8px_rgba(0,0,0,0.25)]">
               {/* Responsive feature image */}
               <img
                 src={feature.image}
