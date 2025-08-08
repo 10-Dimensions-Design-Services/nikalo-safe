@@ -9,10 +9,19 @@
     "client": "cd client && npm start",
     "install-all": "npm install && cd client && npm install && cd ../server && npm install"
   },
-  "keywords": ["mern", "react", "node", "express", "mongodb"],
+  "keywords": [
+    "mern",
+    "react",
+    "node",
+    "express",
+    "mongodb"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "react-swipeable": "^7.0.2"
   }
-} 
+}
