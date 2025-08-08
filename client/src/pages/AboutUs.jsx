@@ -16,10 +16,9 @@ const AboutUs = () => {
 <section id="about-hero" className="relative overflow-hidden pb-16 md:pb-24">
   <div className="container-max px-2.5">
     <div
-      className="relative bg-cover bg-center bg-no-repeat rounded-lg w-full h-[350px] sm:h-[500px] md:h-[600px] lg:h-[720px] flex items-center"
+      className="relative bg-cover bg-center bg-no-repeat rounded-lg w-full mn-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[720px] flex items-center"
       style={{
         backgroundImage: "url('/assets/images/about-hero-image.jpg')",
-        minHeight: "720px",
       }}
     >
       <div className="absolute inset-0 rounded-lg" style={{ background: 'rgba(0,0,0,0.5)', zIndex: 1 }} />
