@@ -7,7 +7,7 @@ const BrandValueSection = () => {
   console.log('showValues state:', showValues); // Debug log
 
   return (
-    <section className="pb-12 md:pb-16 lg:pb-24 bg-white">
+    <section className="pb-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
         <div className="max-w-[1152px] mx-auto flex flex-col">
           {/* Top Center Heading */}
