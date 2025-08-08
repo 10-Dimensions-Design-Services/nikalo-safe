@@ -6,7 +6,7 @@ const SolutionHeroSection = () => {
       id="solution-hero-section"
       className="pb-24 relative overflow-hidden bg-white"
     >
-      <div className="container-max">
+      <div className="container-max px-2.5">
         <div
           className="relative bg-top bg-cover bg-center bg-no-repeat rounded-lg"
           style={{
