@@ -6,6 +6,7 @@ import purposeImage from '../assets/Images/namepurpose.png';
 import missionImage from '../assets/Images/mission.png';
 import TeamImg1 from '../assets/Images/Dpsir.jpeg';
 import TeamImg2 from '../assets/Images/Manisir.jpeg';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
@@ -172,9 +173,9 @@ const AboutUs = () => {
         <p className="max-w-2xl md:max-w-3xl mx-auto paragraph-regular leading-relaxed mb-8 text-[#1F2937]">
           Take safety into your own hands with Nikalo Safe – your emergency evacuation guide. Harness the power of intelligent navigation to protect lives during fires, gas leaks, and critical emergencies. Save time, prevent panic, and ensure safe escapes with cutting-edge, AI-driven technology. Join the safety revolution now and make every second count!
         </p>
-        <button className="px-6 py-3 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-white transition">
-          Contact Us
-        </button>
+        <Link to="/contactus" className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors font-medium h-10 px-4 py-2 xl:px-6 rounded-xl text-sm xl:text-base">
+              Contact Us
+        </Link>
       </section>
 
       {/* Innovation Feedback Carousel */}
