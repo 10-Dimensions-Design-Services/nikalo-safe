@@ -110,9 +110,11 @@ const FeedbackCarousel = () => {
         <p className="text-sm sm:text-base md:text-lg font-semibold">{name}</p>
         <p className="text-xs sm:text-sm md:text-base">{profession}</p>
 
-        <button className="text-sm sm:text-base px-6 py-2 bg-white text-[#333] rounded-full font-medium hover:bg-gray-100 transition mt-2 mb-6 sm:mb-12">
-          Add Yours
-        </button>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="text-sm sm:text-base px-6 py-2 bg-white text-[#333] rounded-full font-medium hover:bg-gray-100 transition mt-2 mb-6 sm:mb-12"> Add Yours </a>
 
         {/* Arrows - visible only on large screens and up */}
         <div className="hidden lg:flex absolute inset-y-0 left-0 right-0 items-center justify-between px-4 pointer-events-none z-20">
