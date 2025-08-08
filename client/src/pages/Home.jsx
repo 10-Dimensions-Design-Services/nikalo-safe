@@ -8,6 +8,7 @@ import BrandValueSection from '../components/BrandValueSection';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import FireStats from '../components/Graphs';
+import Message from '../components/Message'; // Assuming you have a MessageIcon component
 
 
 const Home = () => {
@@ -22,8 +23,8 @@ const Home = () => {
       <BrandValueSection />
       <Contact />
       {/* <CTASection /> */} 
-      
       <Footer />
+      <Message />
     </div>
   );
 };
