@@ -136,7 +136,8 @@ const AboutUs = () => {
                 CPI Digital Transformation and AI for Leaders, IIM Indore
               </p>
               <p className="paragraph-regular text-[#6d6d6d] leading-relaxed overflow-hidden">
-                The visionary with decades of experience in various technologies and processes implementation during fire and life safety design, construction and facility management in the buildings, industries and infrastructure sector. He is the innovator of “Digital Twin – Based System and Method for Disaster Management” with patent application number: 202421054472 PCT International Application Number: PCT/IN2025/051041
+              The visionary with decades of experience in various technologies and processes implementation during fire and life safety design, construction and facility management in the buildings, industries and infrastructure sector. He is the innovator of “Digital Twin – Based System and Method for Disaster Management” with Indian Application Number: 202421054472 filed on 17 July 2024
+              PCT Application Number: PCT/IN2025/051041 filed on 11 July 2025
               </p>
             </div>
 
