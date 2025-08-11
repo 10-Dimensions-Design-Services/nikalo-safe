@@ -1,76 +1,81 @@
-
+// src/pages/PrivacyPolicy.js
 import React from "react";
+
+const lastUpdated = "August 11, 2025"; // <--- change to your actual publish date
 
 export default function PrivacyPolicy() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10 text-gray-700">
-      <h1 className="text-2xl font-bold mb-6">Privacy Policy</h1>
+    <main className="max-w-4xl mx-auto px-4 py-12 text-gray-800">
+      <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
+
       <p className="mb-4">
-        This Privacy Policy describes how <strong>Nikalo Safe</strong> collects,
-        uses, and protects the personal and building-related information you
-        provide when using our fire safety and evacuation system.
+        This Privacy Policy describes how <strong>Nikalo Safe</strong> collects, uses, and protects the
+        personal and building-related information you provide when using our fire safety and evacuation system.
       </p>
 
-      <h2 className="text-lg font-semibold mt-6 mb-2">1. Information We Collect</h2>
-      <ul className="list-disc list-inside mb-4">
-        <li>
-          <strong>Occupant Data:</strong> Optional contact details provided for
-          rescue communication.
-        </li>
-        <li>
-          <strong>Location Data:</strong> QR code scan location for calculating
-          evacuation paths.
-        </li>
-        <li>
-          <strong>Building Data:</strong> Refuge areas, exits, and fire safety
-          infrastructure details.
-        </li>
-        <li>
-          <strong>Sensor Data:</strong> Fire alarm triggers, hazard zones, and
-          live fire status from IoT devices or fire panel systems.
-        </li>
-      </ul>
+      <section className="mt-6">
+        <h2 className="text-xl font-semibold mb-2">1. Information We Collect</h2>
+        <ul className="list-disc list-inside space-y-1">
+          <li>
+            <strong>Occupant Data:</strong> Optional contact details provided for rescue communication.
+          </li>
+          <li>
+            <strong>Location Data:</strong> QR code scan location (floor/zone) for calculating evacuation paths.
+          </li>
+          <li>
+            <strong>Building Data:</strong> Refuge areas, exits, staircases and other safety infrastructure details.
+          </li>
+          <li>
+            <strong>Sensor Data:</strong> Fire alarm triggers, hazard zones, and live fire status from IoT devices or integrated panels.
+          </li>
+        </ul>
+      </section>
 
-      <h2 className="text-lg font-semibold mt-6 mb-2">2. How We Use the Information</h2>
-      <p className="mb-4">
-        We use collected data to:
-      </p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Provide real-time evacuation routes to occupants.</li>
-        <li>Alert and inform firefighting teams of incident details.</li>
-        <li>Enhance situational awareness during fire emergencies.</li>
-        <li>Improve our platform and safety algorithms.</li>
-      </ul>
+      <section className="mt-6">
+        <h2 className="text-xl font-semibold mb-2">2. How We Use the Information</h2>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Provide real-time evacuation routes to occupants.</li>
+          <li>Alert and inform firefighting teams and emergency responders of incident details.</li>
+          <li>Enable communication between occupants and rescue teams.</li>
+          <li>Improve our platform, analytics, and safety algorithms.</li>
+        </ul>
+      </section>
 
-      <h2 className="text-lg font-semibold mt-6 mb-2">3. Data Sharing</h2>
-      <p className="mb-4">
-        We only share relevant data with authorized emergency responders during
-        an active incident. We do not sell or rent personal data to third
-        parties.
-      </p>
+      <section className="mt-6">
+        <h2 className="text-xl font-semibold mb-2">3. Data Sharing</h2>
+        <p>
+          We only share relevant data with authorized emergency responders during an active incident. We do not sell
+          or rent personal data to third parties. We may share aggregated, anonymized data for analytics or research.
+        </p>
+      </section>
 
-      <h2 className="text-lg font-semibold mt-6 mb-2">4. Data Security</h2>
-      <p className="mb-4">
-        We implement encryption and secure transmission protocols to protect
-        your information. However, no internet-based system can be guaranteed
-        100% secure.
-      </p>
+      <section className="mt-6">
+        <h2 className="text-xl font-semibold mb-2">4. Data Security</h2>
+        <p>
+          We implement industry-standard security measures such as encryption in transit and at rest, access controls,
+          and monitoring to protect collected data. However, no internet-based system can be guaranteed 100% secure.
+        </p>
+      </section>
 
-      <h2 className="text-lg font-semibold mt-6 mb-2">5. Your Rights</h2>
-      <p className="mb-4">
-        You may request deletion of your personal data from our system after an
-        incident has been resolved, subject to legal and safety requirements.
-      </p>
+      <section className="mt-6">
+        <h2 className="text-xl font-semibold mb-2">5. Retention & Deletion</h2>
+        <p>
+          We retain incident-related data for as long as necessary for safety, compliance, and quality-improvement purposes.
+          You may request deletion of your personal data after an incident is resolved, subject to legal or regulatory obligations.
+        </p>
+      </section>
 
-      <h2 className="text-lg font-semibold mt-6 mb-2">6. Changes to Privacy Policy</h2>
-      <p className="mb-4">
-        We may update this Privacy Policy from time to time. Any updates will be
-        posted on this page.
-      </p>
+      <section className="mt-6">
+        <h2 className="text-xl font-semibold mb-2">6. Your Rights</h2>
+        <p>
+          Depending on your jurisdiction, you may have rights to access, correct, or delete your personal data. To exercise such
+          rights, contact us at <a href="mailto:Corporate@nikalosafe.com" className="text-primary underline">Corporate@nikalosafe.com</a>.
+        </p>
+      </section>
 
-      <p className="mt-8 text-sm text-gray-500">
-        Last updated: {new Date().toLocaleDateString()}
-      </p>
-    </div>
+      <footer className="mt-8 text-sm text-gray-600">
+        <p>Last updated: {lastUpdated}</p>
+      </footer>
+    </main>
   );
 }
