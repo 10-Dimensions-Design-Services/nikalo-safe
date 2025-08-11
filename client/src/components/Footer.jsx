@@ -26,10 +26,10 @@ const Footer = () => {
               </span>
             </div>
             <div className="flex gap-3 md:gap-4 justify-center sm:justify-start text-red-600">
-              <a href="#"><FaInstagram className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a href="#"><FaLinkedin className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a href="#"><FaFacebook className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a href="#"><SiX className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:Corporate@nikalosafe.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><FaInstagram className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:Corporate@nikalosafe.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><FaLinkedin className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:Corporate@nikalosafe.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><FaFacebook className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:Corporate@nikalosafe.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><SiX className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
             </div>
           </div>
 
@@ -52,14 +52,21 @@ const Footer = () => {
 <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
   <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Company</h3>
   <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
-    <li>
-      <a
-        href={`mailto:Corporate@nikalosafe.com?subject=Career%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20apply%20for%20a%20position [xyz - position]%20at%20Nikalo%20Safe.%20Please%20find%20my%20CV%20attached.`}
-        className="hover:text-gray-900 transition-colors"
-      >
-        Careers
-      </a>
-    </li>
+<li>
+  <a
+    href={
+      /Mobi|Android/i.test(navigator.userAgent)
+        ? "mailto:Corporate@nikalosafe.com?subject=Career%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20apply%20for%20a%20position%20%5Bxyz%20-%20position%5D%20at%20Nikalo%20Safe.%20Please%20find%20my%20CV%20attached."
+        : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com&su=Career%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20apply%20for%20a%20position%20%5Bxyz%20-%20position%5D%20at%20Nikalo%20Safe.%20Please%20find%20my%20CV%20attached."
+    }
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-gray-900 transition-colors"
+  >
+    Careers
+  </a>
+</li>
+
   </ul>
 </div>
 
