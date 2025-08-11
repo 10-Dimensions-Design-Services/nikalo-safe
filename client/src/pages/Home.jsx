@@ -8,7 +8,8 @@ import BrandValueSection from '../components/BrandValueSection';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import FireStats from '../components/Graphs';
-import Message from '../components/Message'; // Assuming you have a MessageIcon component
+import Message from '../components/Message'; 
+import FeedbackCarousel from '../components/FeedbackCarousel';
 
 
 const Home = () => {
@@ -19,10 +20,9 @@ const Home = () => {
       <FireStats />
       <FeaturesSection />
       <VideoSection />
-      <TestimonialSection />
+      <FeedbackCarousel />
       <BrandValueSection />
       <Contact />
-      {/* <CTASection /> */} 
       <Footer />
       <Message />
     </div>
