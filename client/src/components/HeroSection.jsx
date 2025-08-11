@@ -49,7 +49,7 @@ const HeroSection = () => {
 
               {/* Button */}
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-transparent text-primary hover:bg-primary hover:text-white transition-colors paragraph-bold h-10 px-6 rounded-lg border-2 border-primary inline-flex items-center justify-center"
