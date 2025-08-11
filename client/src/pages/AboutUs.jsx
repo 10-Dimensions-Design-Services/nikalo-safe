@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import TestimonialSection from '../components/TestimonialSection';
 import FeedbackCarousel from '../components/FeedbackCarousel';
 import purposeImage from '../assets/Images/namepurpose.png';
 import missionImage from '../assets/Images/mission.png';
@@ -179,8 +180,8 @@ const AboutUs = () => {
         </Link>
       </section>
 
-      {/* Innovation Feedback Carousel */}
-      <FeedbackCarousel />
+      {/* Testimonial section */}
+      <TestimonialSection />
 
       <Footer />
     </div>

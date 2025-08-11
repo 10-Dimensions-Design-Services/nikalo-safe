@@ -38,9 +38,16 @@ const Footer = () => {
             <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Product</h3>
             <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
               <li>
-                <Link 
-                  to="/about#leadership" 
-                  className="hover:text-gray-900 transition-colors">
+                <Link
+                  to="/about#leadership"
+                  onClick={(e) => {
+                    if (window.location.pathname === "/about" && window.location.hash === "#leadership") {
+                      e.preventDefault();
+                      document.querySelector("#leadership")?.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                  className="hover:text-gray-900 transition-colors"
+                >
                   Patent Applied
                 </Link>
               </li>
@@ -48,28 +55,28 @@ const Footer = () => {
               <li><a href="#" className="hover:text-gray-900 transition-colors">Terms of Use</a></li>
             </ul>
           </div>
-{/* Column 3 - Company */}
-<div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-  <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Company</h3>
-  <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
-<li>
-  <a
-    href={
-      /Mobi|Android/i.test(navigator.userAgent)
-        ? "mailto:Corporate@nikalosafe.com?subject=Career%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20apply%20for%20a%20position%20%5Bxyz%20-%20position%5D%20at%20Nikalo%20Safe.%20Please%20find%20my%20CV%20attached."
-        : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com&su=Career%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20apply%20for%20a%20position%20%5Bxyz%20-%20position%5D%20at%20Nikalo%20Safe.%20Please%20find%20my%20CV%20attached."
-    }
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-gray-900 transition-colors"
-  >
-    Careers
-  </a>
-</li>
+          
+          {/* Column 3 - Company */}
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+            <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Company</h3>
+            <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
+          <li>
+            <a
+              href={
+                /Mobi|Android/i.test(navigator.userAgent)
+                  ? "mailto:Corporate@nikalosafe.com?subject=Career%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20apply%20for%20a%20position%20%5Bxyz%20-%20position%5D%20at%20Nikalo%20Safe.%20Please%20find%20my%20CV%20attached."
+                  : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com&su=Career%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20apply%20for%20a%20position%20%5Bxyz%20-%20position%5D%20at%20Nikalo%20Safe.%20Please%20find%20my%20CV%20attached."
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-900 transition-colors"
+            >
+              Careers
+            </a>
+          </li>
 
-  </ul>
-</div>
-
+            </ul>
+          </div>
 
           {/* Column 4 - About */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
@@ -83,9 +90,16 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/about#leadership" 
-                  className="hover:text-gray-900 transition-colors">
+                <Link
+                  to="/about#leadership"
+                  onClick={(e) => {
+                    if (window.location.pathname === "/about" && window.location.hash === "#leadership") {
+                      e.preventDefault();
+                      document.querySelector("#leadership")?.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                  className="hover:text-gray-900 transition-colors"
+                >
                   Our Team
                 </Link>
               </li>
