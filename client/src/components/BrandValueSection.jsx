@@ -3,9 +3,11 @@ import safetyImage from "../assets/Images/BrandImg.png";
 
 const BrandValueSection = () => {
   const [showValues, setShowValues] = useState(false);
+  
+  console.log('showValues state:', showValues); // Debug log
 
   return (
-    <section className="pb-12 md:pb-16 lg:pb-24 bg-white">
+    <section className="pb-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
         <div className="max-w-[1152px] mx-auto flex flex-col">
           {/* Top Center Heading */}
@@ -43,41 +45,40 @@ const BrandValueSection = () => {
                 </p>
               </div>
 
-              {/* Hidden Section that appears on button click */}
-              {showValues && (
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
-                  <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition w-[200px] h-[200px] sm:w-[180px] sm:h-[180px] md:w-[160px] md:h-[160px] mx-auto">
-                    <h4 className="font-bold text-gray-900 mb-2 text-center text-sm">
-                      Enhanced Marketability
-                    </h4>
-                    <p className="text-gray-600 text-xs text-center">
-                      Highlighting Nikalo Safe as a key feature in your buildings
-                      can attract safety-conscious buyers and tenants, differentiating
-                      your properties from competition.
-                    </p>
-                  </div>
+                              {/* Hidden Section that appears on button click */}
+                {showValues === true && (
+                  <div className="grid grid-cols-3 gap-3 mt-6">
+                    <div className="aspect-square p-3 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                      <h4 className="font-bold text-gray-900 mb-1 text-center text-xs">
+                        Enhanced Marketability
+                      </h4>
+                      <p className="text-gray-600 text-[10px] text-center leading-tight">
+                        Highlighting Nikalo Safe as a key feature can attract
+                        safety-conscious buyers and tenants.
+                      </p>
+                    </div>
 
-                  <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition w-[200px] h-[200px] sm:w-[180px] sm:h-[180px] md:w-[160px] md:h-[160px] mx-auto">
-                    <h4 className="font-bold text-gray-900 mb-2 text-center text-sm">
-                      Positive Reputation
-                    </h4>
-                    <p className="text-gray-600 text-xs text-center">
-                      Demonstrating a proactive approach to fire safety enhances
-                      your reputation as a responsible and forward-thinking developer.
-                    </p>
-                  </div>
+                    <div className="aspect-square p-3 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                      <h4 className="font-bold text-gray-900 mb-1 text-center text-xs">
+                        Positive Reputation
+                      </h4>
+                      <p className="text-gray-600 text-[10px] text-center leading-tight">
+                        Demonstrating a proactive approach to fire safety enhances
+                        your reputation as a responsible developer.
+                      </p>
+                    </div>
 
-                  <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition w-[200px] h-[200px] sm:w-[180px] sm:h-[180px] md:w-[160px] md:h-[160px] mx-auto sm:col-span-2 md:col-span-1">
-                    <h4 className="font-bold text-gray-900 mb-2 text-center text-sm">
-                      Meeting Regulatory Requirements
-                    </h4>
-                    <p className="text-gray-600 text-xs text-center">
-                      Nikalo Safe can assist in meeting and exceeding fire safety
-                      regulations, ensuring compliance and minimizing potential penalties.
-                    </p>
+                    <div className="aspect-square p-3 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col justify-center">
+                      <h4 className="font-bold text-gray-900 mb-1 text-center text-xs">
+                        Meeting Regulatory Requirements
+                      </h4>
+                      <p className="text-gray-600 text-[10px] text-center leading-tight">
+                        Nikalo Safe can assist in meeting and exceeding fire safety
+                        regulations, ensuring compliance.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
               {/* Button */}
               <button
@@ -90,7 +91,7 @@ const BrandValueSection = () => {
           </div>
 
           {/* Desktop Layout */}
-          <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center">
+          <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Content */}
             <div className="space-y-6">
               <div>
@@ -110,9 +111,9 @@ const BrandValueSection = () => {
               </div>
 
               {/* Hidden Section for desktop */}
-              {showValues && (
-                <div className="grid md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
-                  <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition w-[200px] h-[200px] mx-auto">
+              {showValues === true && (
+                <div className="grid grid-cols-3 gap-4 mt-6">
+                  <div className="aspect-square p-4 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-center">
                     <h4 className="font-bold text-gray-900 mb-2 text-center text-sm">
                       Enhanced Marketability
                     </h4>
@@ -122,7 +123,7 @@ const BrandValueSection = () => {
                       properties from competition.
                     </p>
                   </div>
-                  <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition w-[200px] h-[200px] mx-auto">
+                  <div className="aspect-square p-4 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-center">
                     <h4 className="font-bold text-gray-900 mb-2 text-center text-sm">
                       Positive Reputation
                     </h4>
@@ -131,7 +132,7 @@ const BrandValueSection = () => {
                       your reputation as a responsible and forward-thinking developer.
                     </p>
                   </div>
-                  <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition w-[200px] h-[200px] mx-auto">
+                  <div className="aspect-square p-4 border rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-center">
                     <h4 className="font-bold text-gray-900 mb-2 text-center text-sm">
                       Meeting Regulatory Requirements
                     </h4>
@@ -157,7 +158,11 @@ const BrandValueSection = () => {
               <img
                 src={safetyImage}
                 alt="Nikalo Safe"
-                className="rounded-2xl shadow-lg w-[542px] h-[455px] object-cover"
+                className={`rounded-2xl shadow-lg object-cover transition-all duration-300 ${
+                  showValues 
+                    ? 'w-[400px] h-[335px]' 
+                    : 'w-[542px] h-[455px]'
+                }`}
               />
             </div>
           </div>

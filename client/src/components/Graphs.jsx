@@ -94,13 +94,13 @@ export default function FireStats() {
     // ============================================================================
     
     <section
-      ref={ref}  // Attach ref for scroll detection
-      className="relative overflow-hidden pt-6 md:pt-12 pb-12 md:pb-24 bg-[#F5F7FA]"
-    >
-      <div className="container-max px-4 md:px-8">
-        {/* Section Title */}
+      // Attach ref for scroll detection
+          className="relative overflow-hidden pt-0 pb-24 bg-white"
+        >
+          <div className="container-max px-2.5 md:px-8">
+            {/* Section Title */}
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-gray-900">
-          <span className="text-[#F4003B]">Learning </span>from the Past
+          <span className="text-primary">Learning </span>from the Past
         </h2>
 
         {/* ============================================================================

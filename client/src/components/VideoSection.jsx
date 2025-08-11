@@ -4,13 +4,13 @@ import Video2Image from "../assets/Images/Video2.png";
 
 const VideoSection = () => {
   return (
-    <section className="relative overflow-hidden pt-6 md:pt-0 pb-12 md:pb-24 bg-white">
-      <div className="container-max px-4 md:px-8">
+    <section className="relative overflow-hidden pb-24 bg-white">
+      <div className="container-max px-2.5">
         {/* Section Header */}
-        <div className="text-center mb-10 md:mb-14">
+        <div className="text-center mb-8 md:mb-14">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
             Using Nikalo Safe is as Simple as a{" "}
-            <span className="text-[#F4003B]">Scan</span>
+            <span className="text-primary">Scan</span>
           </h2>
         </div>
 
@@ -25,7 +25,7 @@ const VideoSection = () => {
             />
             {/* Play Button */}
             <button className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-[#F4003B] hover:bg-red-700 text-white rounded-full p-3 sm:p-4 md:p-5 lg:p-6 transition-all duration-300 transform hover:scale-110 shadow-lg">
+              <div className="bg-primary hover:bg-red-700 text-white rounded-full p-3 sm:p-4 md:p-5 lg:p-6 transition-all duration-300 transform hover:scale-110 shadow-lg">
                 <svg
                   className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10"
                   fill="currentColor"
