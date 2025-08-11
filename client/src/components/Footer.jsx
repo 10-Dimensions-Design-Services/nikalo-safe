@@ -26,10 +26,10 @@ const Footer = () => {
               </span>
             </div>
             <div className="flex gap-3 md:gap-4 justify-center sm:justify-start text-red-600">
-              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><FaInstagram className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><FaLinkedin className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><FaFacebook className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><SiX className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaInstagram className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaLinkedin className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaFacebook className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><SiX className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
             </div>
           </div>
 
