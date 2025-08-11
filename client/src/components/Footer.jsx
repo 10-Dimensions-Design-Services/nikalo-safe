@@ -60,6 +60,16 @@ const Footer = () => {
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Company</h3>
             <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
+            <li>
+            <a
+              href="https://10dimensionsdesign.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-900 transition-colors"
+            >
+              Parent company
+            </a>
+          </li>
           <li>
             <a
               href={
@@ -74,7 +84,6 @@ const Footer = () => {
               Careers
             </a>
           </li>
-
             </ul>
           </div>
 
@@ -103,7 +112,6 @@ const Footer = () => {
                   Our Team
                 </Link>
               </li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">FAQ</a></li>
               <li>       
                <Link to="/contactus" className="hover:text-gray-900 transition-colors">
                 Contact Us
