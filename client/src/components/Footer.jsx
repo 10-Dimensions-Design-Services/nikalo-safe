@@ -1,13 +1,16 @@
+// src/components/Footer.js
 import React from "react";
+import { Link } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
-import { FaInstagram, FaLinkedin, FaFacebook} from "react-icons/fa";
-import {SiX} from "react-icons/si";
+import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { SiX } from "react-icons/si";
 
 const Footer = () => {
   return (
     <footer className="bg-white flex flex-col items-center justify-center">
       <div className="w-full px-4 max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6 md:gap-y-12 text-sm w-full py-8">
+          
           {/* Column 1 - Company Info */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Nikalo Safe</h3>
@@ -34,7 +37,13 @@ const Footer = () => {
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Product</h3>
             <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Patent Applied</a></li>
+              <li>
+                <Link 
+                  to="/about#leadership" 
+                  className="hover:text-gray-900 transition-colors">
+                  Patent Applied
+                </Link>
+              </li>
               <li><a href="#" className="hover:text-gray-900 transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-gray-900 transition-colors">Terms of Use</a></li>
             </ul>
@@ -44,9 +53,7 @@ const Footer = () => {
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Company</h3>
             <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Blog</a></li>
               <li><a href="#" className="hover:text-gray-900 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">How it Works</a></li>
             </ul>
           </div>
 

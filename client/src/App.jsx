@@ -4,11 +4,13 @@ import Home from './pages/Home';
 import SolutionPage from './pages/SolutionPage';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import ScrollToHashElement from './components/ScrollToHashElement';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToHashElement /> {/* Handles smooth scrolling */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/solutions" element={<SolutionPage />} />
