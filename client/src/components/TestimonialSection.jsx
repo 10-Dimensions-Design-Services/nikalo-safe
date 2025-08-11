@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import user1 from '../assets/Images/shashank sir.jpeg';
-import user2 from '../assets/Images/user2.jpg';
+import user2 from '../assets/Images/Vishwajisir.jpeg';
 
 const testimonials = [
   {
@@ -13,41 +13,6 @@ const testimonials = [
   {
     name: "Vishwajeet Patil",
     role: "Senior Manager",
-    text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments.",
-    image: user2,
-    rating: 5,
-  },
-  {
-    name: "xxxx xxx",
-    role: "xxxxxx",
-    text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments.",
-    image: user2,
-    rating: 5,
-  },
-  {
-    name: "xxxx xxx",
-    role: "xxxxxx",
-    text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments.",
-    image: user2,
-    rating: 5,
-  },
-  {
-    name: "xxxx xxx",
-    role: "xxxxxx",
-    text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments.",
-    image: user2,
-    rating: 5,
-  },
-  {
-    name: "xxxx xxx",
-    role: "xxxxxx",
-    text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments.",
-    image: user2,
-    rating: 5,
-  },
-  {
-    name: "xxxx xxx",
-    role: "xxxxxx",
     text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments.",
     image: user2,
     rating: 5,
