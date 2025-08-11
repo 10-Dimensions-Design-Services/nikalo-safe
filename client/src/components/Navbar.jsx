@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,41 +34,35 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            <a 
-              href="/" 
-              className="text-black hover:text-primary transition-colors font-medium px-3 py-2 text-sm xl:text-base cursor-pointer"
-            >
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8"> 
+            <Link to="/" className="text-black hover:text-primary transition-colors font-medium px-3 py-2 text-sm xl:text-base">
               Home
-            </a>
-            <a href="/about" className="text-black hover:text-primary transition-colors font-medium px-3 py-2 text-sm xl:text-base">
+            </Link>
+            <Link to="/about" className="text-black hover:text-primary transition-colors font-medium px-3 py-2 text-sm xl:text-base">
               About Us
-            </a>
-            <a href="/solutions" className="text-black hover:text-primary transition-colors font-medium px-3 py-2 text-sm xl:text-base">
+            </Link>
+            <Link to="/solutions" className="text-black hover:text-primary transition-colors font-medium px-3 py-2 text-sm xl:text-base">
               Solutions
-            </a>
-            <button className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors font-medium h-10 px-4 xl:px-6 rounded-xl text-sm xl:text-base">
+            </Link>
+            <Link to="/contactus" className="flex items-center justify-center bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors font-medium h-10 px-4 xl:px-6 rounded-xl text-sm xl:text-base">
               Contact Us
-            </button>
+            </Link>
           </div>
 
           {/* Tablet Navigation (hidden on mobile and desktop) */}
           <div className="hidden md:flex lg:hidden items-center space-x-4">
-            <a 
-              href="/" 
-              className="text-black hover:text-primary transition-colors font-medium px-2 py-2 text-sm cursor-pointer"
-            >
+            <Link to="/" className="text-black hover:text-primary transition-colors font-medium px-2 py-2 text-sm cursor-pointer">
               Home
-            </a>
-            <a href="/about" className="text-black hover:text-primary transition-colors font-medium px-2 py-2 text-sm">
+            </Link>
+            <Link to="/about" className="text-black hover:text-primary transition-colors font-medium px-2 py-2 text-sm cursor-pointer">
               About
-            </a>
-            <a href="/solutions" className="text-black hover:text-primary transition-colors font-medium px-2 py-2 text-sm">
+            </Link>
+            <Link to="/solutions" className="text-black hover:text-primary transition-colors font-medium px-2 py-2 text-sm cursor-pointer">
               Solutions
-            </a>
-            <button className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors font-medium h-9 px-4 rounded-xl text-sm">
+            </Link>
+            <Link to="/contactus" className="flex items-center justify-center bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors font-medium h-9 px-4 rounded-xl text-sm">
               Contact
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -92,30 +87,30 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-100 bg-white">
             <div className="px-4 py-4 space-y-2">
-              <a 
-                href="/" 
+              <Link 
+                to="/" 
                 className="block px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-lg cursor-pointer"
               >
                 Home
-              </a>
-              <a 
-                href="/about" 
+              </Link>
+              <Link 
+                to="/about" 
                 className="block px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Us
-              </a>
-              <a 
-                href="/solutions" 
+              </Link>
+              <Link
+                to="/solutions"
                 className="block px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Solutions
-              </a>
+              </Link>
               <div className="pt-4 pb-2 border-t border-gray-100">
-                <button className="block w-full text-center h-12 px-6 bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors font-medium rounded-xl">
+                <Link to="/contactus" className="flex items-center justify-center block w-full text-center h-12 px-6 bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors font-medium rounded-xl">
                   Contact Us
-                </button>
+                </Link>
               </div>
             </div>
           </div>

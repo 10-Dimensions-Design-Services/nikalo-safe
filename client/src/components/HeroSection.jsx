@@ -48,11 +48,14 @@ const HeroSection = () => {
               </p>
 
               {/* Button */}
-              <div className="pt-4 md:pb-24">
-                <button className="bg-transparent text-primary hover:bg-primary hover:text-white transition-colors paragraph-bold h-10 px-6 rounded-lg border-2 border-primary">
-                  Discover How It Works
-                </button>
-              </div>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-transparent text-primary hover:bg-primary hover:text-white transition-colors paragraph-bold h-10 px-6 rounded-lg border-2 border-primary inline-flex items-center justify-center"
+              >
+                Discover How It Works
+              </a>
               {/* Extra spacing to match FeaturesSection gap */}
               <div className="mt-6 md:mt-12"></div>
             </div>
