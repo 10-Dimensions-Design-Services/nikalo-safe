@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="flex items-center gap-4">
             <Mail className="text-red-600 w-6 h-6" />
             <p className="text-gray-800 font-medium">
-              Corporate@nikalosafe.com
+              corporate@nikalosafe.ai
             </p>
           </div>
 

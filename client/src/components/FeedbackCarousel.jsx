@@ -114,7 +114,7 @@ const FeedbackCarousel = () => {
             <p className="text-xs sm:text-sm md:text-base">{profession}</p>
 
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"
             target="_blank"
             rel="noopener noreferrer" 
             className="text-sm sm:text-base px-6 py-2 bg-white text-[#333] rounded-full font-medium hover:bg-gray-100 transition mt-2 mb-6 sm:mb-12"> Add Yours </a>

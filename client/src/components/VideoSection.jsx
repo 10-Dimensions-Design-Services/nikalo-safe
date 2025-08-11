@@ -25,6 +25,12 @@ const VideoSection = () => {
             />
             {/* Play Button */}
             <button className="absolute inset-0 flex items-center justify-center">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute inset-0 flex items-center justify-center"
+            >
               <div className="bg-primary hover:bg-red-700 text-white rounded-full p-3 sm:p-4 md:p-5 lg:p-6 transition-all duration-300 transform hover:scale-110 shadow-lg">
                 <svg
                   className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10"
@@ -38,6 +44,7 @@ const VideoSection = () => {
                   />
                 </svg>
               </div>
+            </a>
             </button>
           </div>
 
@@ -50,7 +57,13 @@ const VideoSection = () => {
             />
             {/* Play Button */}
             <button className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-[#F4003B] hover:bg-red-700 text-white rounded-full p-3 sm:p-4 md:p-5 lg:p-6 transition-all duration-300 transform hover:scale-110 shadow-lg">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute inset-0 flex items-center justify-center"
+            >
+              <div className="bg-primary hover:bg-red-700 text-white rounded-full p-3 sm:p-4 md:p-5 lg:p-6 transition-all duration-300 transform hover:scale-110 shadow-lg">
                 <svg
                   className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10"
                   fill="currentColor"
@@ -63,6 +76,7 @@ const VideoSection = () => {
                   />
                 </svg>
               </div>
+            </a>
             </button>
           </div>
         </div>
