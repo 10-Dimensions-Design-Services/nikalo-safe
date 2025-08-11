@@ -48,14 +48,21 @@ const Footer = () => {
               <li><a href="#" className="hover:text-gray-900 transition-colors">Terms of Use</a></li>
             </ul>
           </div>
+{/* Column 3 - Company */}
+<div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+  <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Company</h3>
+  <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
+    <li>
+      <a
+        href={`mailto:Corporate@nikalosafe.com?subject=Career%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20apply%20for%20a%20position [xyz - position]%20at%20Nikalo%20Safe.%20Please%20find%20my%20CV%20attached.`}
+        className="hover:text-gray-900 transition-colors"
+      >
+        Careers
+      </a>
+    </li>
+  </ul>
+</div>
 
-          {/* Column 3 - Company */}
-          <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-            <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Company</h3>
-            <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Careers</a></li>
-            </ul>
-          </div>
 
           {/* Column 4 - About */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
