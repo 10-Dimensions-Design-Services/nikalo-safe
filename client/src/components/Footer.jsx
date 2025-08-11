@@ -29,7 +29,7 @@ const Footer = () => {
               <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:Corporate@nikalosafe.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><FaInstagram className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
               <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:Corporate@nikalosafe.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><FaLinkedin className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
               <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:Corporate@nikalosafe.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><FaFacebook className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:Corporate@nikalosafe.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><SiX className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:Corporate@nikalosafe.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=Corporate@nikalosafe.com"} target="_blank" rel="noopener noreferrer"><SiX className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
             </div>
           </div>
 
