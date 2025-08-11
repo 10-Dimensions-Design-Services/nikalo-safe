@@ -61,7 +61,13 @@ const Footer = () => {
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">About</h3>
             <ul className="space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
-              <li><a href="#" className="hover:text-gray-900 transition-colors">About Us</a></li>
+             <li>
+                <Link 
+                  to="/about" 
+                  className="hover:text-gray-900 transition-colors">
+                  About Us
+                </Link>
+              </li>
               <li><a href="#" className="hover:text-gray-900 transition-colors">Our Team</a></li>
               <li><a href="#" className="hover:text-gray-900 transition-colors">FAQ</a></li>
               <li><a href="#" className="hover:text-gray-900 transition-colors">Contact</a></li>

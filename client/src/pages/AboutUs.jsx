@@ -133,11 +133,11 @@ const AboutUs = () => {
               <h3 className="title-h4 font-bold text-[#0046BE]">Mr. Dharmendra Patil</h3>
               <p className="text-primary font-semibold">Founder & Director</p>
               <p className="paragraph-regular text-sm text-primary mb-4">
-                CPI Digital Transformation and AI for Leaders, IIM Indore
+                BE (Civil), MBA (Project Management), LEED AP BD+C, IGBC AP, FIV, DHL
               </p>
               <p className="paragraph-regular text-[#6d6d6d] leading-relaxed overflow-hidden">
-              The visionary with decades of experience in various technologies and processes implementation during fire and life safety design, construction and facility management in the buildings, industries and infrastructure sector. He is the innovator of “Digital Twin – Based System and Method for Disaster Management” with Indian Application Number: 202421054472 filed on 17 July 2024
-              PCT Application Number: PCT/IN2025/051041 filed on 11 July 2025
+              The visionary with decades of experience in various technologies and processes implementation during fire and life safety design, construction and facility management in the buildings, industries and infrastructure sector. He is the innovator of “Digital Twin – Based System and Method for Disaster Management” with <span className='paragraph-bold'>Indian Application Number: 202421054472 filed on 17 July 2024
+              PCT Application Number: PCT/IN2025/051041 filed on 11 July 2025</span>
               </p>
             </div>
 
