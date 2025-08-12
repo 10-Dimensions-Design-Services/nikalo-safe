@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768); // Tailwind md breakpoint
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   return (
     <section className="bg-white pb-24">
       <div className="max-w-4xl mx-auto px-6 text-center">
@@ -21,9 +33,18 @@ const Contact = () => {
           {/* Email */}
           <div className="flex items-center gap-4">
             <Mail className="text-red-600 w-6 h-6" />
-            <p className="text-gray-800 font-medium">
+            <a
+              href={
+                isMobile
+                  ? "mailto:corporate@nikalosafe.ai"
+                  : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"
+              }
+              target={isMobile ? "_self" : "_blank"}
+              rel="noopener noreferrer"
+              className="text-gray-800 font-medium hover:underline"
+            >
               corporate@nikalosafe.ai
-            </p>
+            </a>
           </div>
 
           {/* Address */}

@@ -51,8 +51,8 @@ const Footer = () => {
                   Patent Applied
                 </Link>
               </li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition-colors">Terms of Use</a></li>
+              <li><Link to="/privacy-policy" className="hover:text-gray-900 transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-use" className="hover:text-gray-900 transition-colors">Terms of Use</Link></li>
             </ul>
           </div>
           
