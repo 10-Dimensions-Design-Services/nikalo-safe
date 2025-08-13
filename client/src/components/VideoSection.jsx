@@ -28,7 +28,7 @@ const VideoSection = () => {
             <a
 href={
                   /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-                    ? "mailto:corporate@nikalosafe.ai?subject=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20to%20know%20more%20about%20Nikalo%20Safe."
+                    ? "mailto:corporate@nikalosafe.ai?subject=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20in%20know%20more%20about%20Nikalo%20Safe."
                     : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai&su=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20in%20learning%20more%20about%20Nikalo%20Safe."
                 }
                 target="_blank"
@@ -64,7 +64,7 @@ href={
             <button className="absolute inset-0 flex items-center justify-center">
             <a href={
                /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-                    ? "mailto:corporate@nikalosafe.ai?subject=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20to%20know%20more%20about%20Nikalo%20Safe."
+                    ? "mailto:corporate@nikalosafe.ai?subject=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20in%20know%20more%20about%20Nikalo%20Safe."
                     : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai&su=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20in%20learning%20more%20about%20Nikalo%20Safe."
                 }
                 target="_blank"
