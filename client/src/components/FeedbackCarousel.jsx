@@ -19,19 +19,7 @@ const feedbacks = [
     text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments. It can give our occupants the confidence that their well-being is being actively protected. It’s surely a smart investment.",
     name: "Vishwajeet Patil",
     profession: "Senior Manager, K Raheja Corp, Mumbai, India",
-  },
-  {
-    photo: feedbackuser3,
-    text: "This technology has the potential to significantly reduce casualties. It will empower individuals to exit safely and efficiently—often before first responders arrive.",
-    name: "Rajesh Patil",
-    profession: "Senior Fire Officer, Mumbai, India",
-  },
-  {
-    photo: feedbackuser4,
-    text: "In high-stress situations, clear direction can prevent panic and save lives. A solution like this will help universities manage large-scale evacuations efficiently. It can offer students and faculty the confidence that their safety is prioritized.",
-    name: "Dr. Kavita Sharma",
-    profession: "Dean, NIM, Delhi, India",
-  },
+  }
 ];
 
 const FeedbackCarousel = () => {
