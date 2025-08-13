@@ -31,16 +31,7 @@ export default function TermsOfUse() {
       </section>
 
       <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">2. Eligibility</h2>
-        <ul className="list-disc list-inside space-y-1">
-          <li>Are at least 18 years old, or have the consent of a parent/guardian.</li>
-          <li>Have the legal authority to agree to these Terms.</li>
-          <li>Are authorized to access the building or facility where the QR code is installed.</li>
-        </ul>
-      </section>
-
-      <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">3. User Responsibilities</h2>
+        <h2 className="text-xl font-semibold mb-2">2. User Responsibilities</h2>
         <ul className="list-disc list-inside space-y-1">
           <li>Use the system only for legitimate safety and evacuation purposes.</li>
           <li>Follow all local safety procedures and instructions from emergency authorities.</li>
@@ -50,7 +41,7 @@ export default function TermsOfUse() {
       </section>
 
       <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">4. Accuracy and Availability</h2>
+        <h2 className="text-xl font-semibold mb-2">3. Accuracy and Availability</h2>
         <p>
           While we strive to provide accurate and timely information, Nikalo Safe cannot guarantee that
           evacuation routes will always be available or hazard-free, or that fire status updates are
@@ -60,7 +51,7 @@ export default function TermsOfUse() {
       </section>
 
       <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">5. Intellectual Property</h2>
+        <h2 className="text-xl font-semibold mb-2">4. Intellectual Property</h2>
         <p>
           All content, software, designs, and materials provided by Nikalo Safe are owned by or licensed to
           us and are protected by applicable intellectual property laws. You may not copy, modify, distribute,
@@ -69,7 +60,7 @@ export default function TermsOfUse() {
       </section>
 
       <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">6. Limitation of Liability</h2>
+        <h2 className="text-xl font-semibold mb-2">5. Limitation of Liability</h2>
         <p>
           Nikalo Safe is an assistive tool. We are not responsible for any loss, injury, or damage caused by
           relying solely on the Service during an emergency, or for technical failures, network issues, or
@@ -79,7 +70,7 @@ export default function TermsOfUse() {
       </section>
 
       <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">7. Suspension or Termination</h2>
+        <h2 className="text-xl font-semibold mb-2">6. Suspension or Termination</h2>
         <p>
           We may suspend or terminate your access to the Service at any time if you violate these Terms, misuse
           the platform, or for operational or security reasons.
@@ -87,7 +78,7 @@ export default function TermsOfUse() {
       </section>
 
       <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">8. Changes to Terms</h2>
+        <h2 className="text-xl font-semibold mb-2">7. Changes to Terms</h2>
         <p>
           We may update these Terms of Use at any time. Continued use of the Service after updates means you accept
           the new terms.
@@ -95,7 +86,7 @@ export default function TermsOfUse() {
       </section>
 
       <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">9. Governing Law</h2>
+        <h2 className="text-xl font-semibold mb-2">8  . Governing Law</h2>
         <p>
           These Terms are governed by and interpreted under the laws of the jurisdiction where Nikalo Safe is registered,
           without regard to conflict of law principles. (Replace with specific jurisdiction if required.)
@@ -104,7 +95,6 @@ export default function TermsOfUse() {
 
       <footer className="mt-8 text-sm text-gray-600">
         <p>Last updated: {lastUpdated}</p>
-        <p className="mt-2">Questions about these Terms? Contact us at <a href="mailto:Corporate@nikalosafe.com" className="text-primary underline">Corporate@nikalosafe.com</a>.</p>
       </footer>
     </main>
   );
