@@ -14,14 +14,14 @@ const Footer = () => {
           {/* Column 1 - Company Info */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Nikalo Safe</h3>
-            <p className="text-gray-600 flex items-center gap-1 md:gap-2 text-xs md:text-sm mb-1 md:mb-2">
+            <p className="text-gray-600 flex items-center gap-1 md:gap-2 text-xs md:text-sm mb-1 md:mb-2 cursor-pointer hover:text-gray-900 transition-colors">
               <Mail className="w-3 h-3 md:w-4 md:h-4 text-red-600" /> corporate@nikalosafe.ai
             </p>
             <div className="flex flex-col gap-1 md:gap-2 text-gray-600 text-xs md:text-sm mb-2 md:mb-4">
-              <span className="flex items-center">
-                <Phone className="w-3 h-3 md:w-4 md:h-4 text-red-600" /> +918390703746
+              <span className="flex items-center hover:text-gray-900 transition-colors cursor-pointer">
+                <Phone className="w-3 h-3 md:w-4 md:h-4 text-red-600 " /> +918390703746
               </span>
-              <span className="flex items-center">
+              <span className="flex items-center hover:text-gray-900 transition-colors cursor-pointer">
                 <Phone className="w-3 h-3 md:w-4 md:h-4 text-red-600" /> +918329709173
               </span>
             </div>
@@ -67,7 +67,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-gray-900 transition-colors"
             >
-              Parent company
+              10dimensionsdesign (Parent company)
             </a>
           </li>
           <li>

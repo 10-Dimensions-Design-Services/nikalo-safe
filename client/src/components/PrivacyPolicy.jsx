@@ -64,15 +64,7 @@ export default function PrivacyPolicy() {
           You may request deletion of your personal data after an incident is resolved, subject to legal or regulatory obligations.
         </p>
       </section>
-
-      <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">6. Your Rights</h2>
-        <p>
-          Depending on your jurisdiction, you may have rights to access, correct, or delete your personal data. To exercise such
-          rights, contact us at <a href="mailto:Corporate@nikalosafe.com" className="text-primary underline">Corporate@nikalosafe.com</a>.
-        </p>
-      </section>
-
+      
       <footer className="mt-8 text-sm text-gray-600">
         <p>Last updated: {lastUpdated}</p>
       </footer>
