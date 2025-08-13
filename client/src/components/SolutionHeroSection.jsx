@@ -24,7 +24,7 @@ const SolutionHeroSection = () => {
 
           <div className="relative pt-12 pb-12 md:pt-24 px-4 md:px-8">
             <div className="w-full md:w-1/2 text-white">
-              <h1 className="title-h1 mb-4 md:mb-6 leading-tight">
+              <h1 className="title-h1 sm:text-4xl md:text-[32px] lg:text-6xl mb-4 md:mb-6 leading-tight">
                 <span className="text-white">Our </span>
                 <span className="text-primary">Solutions</span>
               </h1>
