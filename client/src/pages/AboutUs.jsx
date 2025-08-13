@@ -18,7 +18,7 @@ const AboutUs = () => {
 <section id="about-hero" className="relative overflow-hidden pb-16 md:pb-24">
   <div className="container-max px-2.5">
  <div
-      className="relative bg-cover bg-center bg-no-repeat rounded-lg w-full h-[350px] sm:h-[500px] md:h-[600px] lg:h-[720px] flex items-center"
+      className="relative bg-cover bg-center bg-no-repeat rounded-lg w-full h-[350px] sm:h-[500px] md:h-[600px] lg:h-[720px]"
       style={{
         backgroundImage: "url('/assets/images/about-hero-image.jpg')",
         minHeight: "720px",
@@ -33,7 +33,7 @@ const AboutUs = () => {
         <h2 className="title-h3 md:text-2xl lg:text-3xl mb-4 md:mb-6 text-white">
           Evacuate Smart, Evacuate Safe with Nikalo Safe
         </h2>
-        <p className="paragraph-regular mb-6 md:mb-8 text-base sm:text-lg md:text-xl leading-relaxed w-full text-white max-w-md">
+        <p className="paragraph-bold mb-6 md:mb-8 text-base sm:text-lg md:text-xl leading-relaxed w-full text-white max-w-md">
           In emergency situations, clear and accessible escape routes are vital. Our smart evacuation system guides you through the safest route during emergencies and leads to the safe path and away from danger.
         </p>
       </div>
