@@ -134,7 +134,7 @@ const AboutUs = () => {
               <h3 className="title-h4 font-bold text-[#0046BE]">Mr. Dharmendra Patil</h3>
               <p className="text-primary font-semibold">Founder & Director</p>
               <p className="paragraph-regular text-sm text-primary mb-4">
-                BE (Civil), MBA (Project Management), LEED AP BD+C, IGBC AP, FIV, DHL
+                BE (Civil), MBA (Project Management), LEED AP BD+C, IGBC AP, FIV, DHL, CPI in Digital Transformation and AI for Leaders (IIM Indore)
               </p>
               <p className="paragraph-regular text-[#6d6d6d] leading-relaxed overflow-hidden">
               The visionary with decades of experience in various technologies and processes implementation during fire and life safety design, construction and facility management in the buildings, industries and infrastructure sector. He is the innovator of “Digital Twin – Based System and Method for Disaster Management” with <span className='paragraph-bold'>Indian Application Number: 202421054472 filed on 17 July 2024
@@ -157,7 +157,7 @@ const AboutUs = () => {
               <h3 className="title-h4 font-bold text-[#0046BE]">Mr. Maniteja Sundara</h3>
               <p className="text-primary font-semibold">Co-founder & Director</p>
               <p className="text-sm text-primary mb-4">
-                PG Diploma in the Business Management, NMIMS
+                B. Tech (Mechanical) ,PG Diploma in the Business Management, NMIMS
               </p>
               <p className="paragraph-regular text-[#6d6d6d] leading-relaxed overflow-hidden">
                 Mechanical Engineer with experience in applying advanced technologies such as Digital Twin, Smart Facility Management, IoT, Augmented Reality (AR), Virtual Reality (VR), and Cloud-based BIM collaboration platforms. Knowledgeable in integrating trends like building analytics, predictive maintenance, and sustainability-focused design. Skilled in the design and implementation of fire fighting systems across all types of buildings.
