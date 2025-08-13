@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import TestimonialSection from '../components/TestimonialSection';
 import purposeImage from '../assets/Images/namepurpose.png';
 import missionImage from '../assets/Images/mission.png';
 import TeamImg1 from '../assets/Images/Dpsir.jpeg';
@@ -178,9 +177,6 @@ const AboutUs = () => {
               Contact Us
         </Link>
       </section>
-
-      {/* Testimonial section */}
-      <TestimonialSection />
 
       <Footer />
     </div>
