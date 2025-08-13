@@ -6,6 +6,7 @@ import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { SiX } from "react-icons/si";
 
 const Footer = () => {
+const isMobile = /Mobi|Android/i.test(navigator.userAgent);
   return (
     <footer className="bg-white flex flex-col items-center justify-center">
       <div className="w-full px-4 max-w-screen-xl mx-auto">
@@ -14,9 +15,21 @@ const Footer = () => {
           {/* Column 1 - Company Info */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Nikalo Safe</h3>
-            <p className="text-gray-600 flex items-center gap-1 md:gap-2 text-xs md:text-sm mb-1 md:mb-2 cursor-pointer hover:text-gray-900 transition-colors">
-              <Mail className="w-3 h-3 md:w-4 md:h-4 text-red-600" /> corporate@nikalosafe.ai
-            </p>
+                      {/* Email clickable */}
+            <a
+              href={
+                isMobile
+                  ? "mailto:corporate@nikalosafe.ai"
+                  : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"
+              }
+              target={isMobile ? "_self" : "_blank"}
+              rel="noopener noreferrer"
+              className="text-gray-600 flex items-center gap-1 md:gap-2 text-xs md:text-sm mb-1 md:mb-2 hover:text-gray-900 transition-colors"
+            >
+              <Mail className="w-3 h-3 md:w-4 md:h-4 text-red-600" />
+              corporate@nikalosafe.ai
+            </a>
+
             <div className="flex flex-col gap-1 md:gap-2 text-gray-600 text-xs md:text-sm mb-2 md:mb-4">
               <span className="flex items-center hover:text-gray-900 transition-colors cursor-pointer">
               <a 
@@ -36,10 +49,10 @@ const Footer = () => {
               </span>
             </div>
             <div className="flex gap-3 md:gap-4 justify-center sm:justify-start text-red-600">
-              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaInstagram className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaLinkedin className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaFacebook className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
-              <a href={ /Mobi|Android/i.test(navigator.userAgent) ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><SiX className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={isMobile ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaInstagram className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={isMobile ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaLinkedin className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={isMobile ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaFacebook className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
+              <a href={isMobile ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><SiX className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
             </div>
           </div>
 
