@@ -49,13 +49,18 @@ const HeroSection = () => {
 
               {/* Button */}
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"
+                href={
+                  /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+                    ? "mailto:corporate@nikalosafe.ai?subject=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20in%20learning%20more%20about%20Nikalo%20Safe."
+                    : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai&su=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20in%20learning%20more%20about%20Nikalo%20Safe."
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-transparent text-primary hover:bg-primary hover:text-white transition-colors paragraph-bold h-10 px-6 rounded-lg border-2 border-primary inline-flex items-center justify-center"
               >
                 Discover How It Works
               </a>
+
               {/* Extra spacing to match FeaturesSection gap */}
               <div className="mt-6 md:mt-12"></div>
             </div>
