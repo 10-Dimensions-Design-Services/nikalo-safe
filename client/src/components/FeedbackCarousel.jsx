@@ -19,7 +19,13 @@ const feedbacks = [
     text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments. It can give our occupants the confidence that their well-being is being actively protected. It’s surely a smart investment.",
     name: "Vishwajeet Patil",
     profession: "Senior Manager, K Raheja Corp, Mumbai, India",
-  }
+  },
+  {
+    photo: feedbackuser3,
+    text: "Nikalo Safe doesn’t just alert - it equips you with the right information at the right time, making all the difference when it matters most.",
+    name: "Carol Williams",
+    profession: "Electrical, Fire Alarm, Public address system design professional",
+  },
 ];
 
 const FeedbackCarousel = () => {
