@@ -86,7 +86,7 @@ export default function TermsOfUse() {
       </section>
 
       <section className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">8  . Governing Law</h2>
+        <h2 className="text-xl font-semibold mb-2">8 . Governing Law</h2>
         <p>
           These Terms are governed by and interpreted under the laws of the jurisdiction where Nikalo Safe is registered,
           without regard to conflict of law principles. (Replace with specific jurisdiction if required.)
