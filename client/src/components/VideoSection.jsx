@@ -26,9 +26,14 @@ const VideoSection = () => {
             {/* Play Button */}
             <button className="absolute inset-0 flex items-center justify-center">
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"
-              target="_blank"
-              rel="noopener noreferrer"
+href={
+                  /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+                    ? "mailto:corporate@nikalosafe.ai?subject=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20to%20know%20more%20about%20Nikalo%20Safe."
+                    : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai&su=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20in%20learning%20more%20about%20Nikalo%20Safe."
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+
               className="absolute inset-0 flex items-center justify-center"
             >
               <div className="bg-primary hover:bg-red-700 text-white rounded-full p-3 sm:p-4 md:p-5 lg:p-6 transition-all duration-300 transform hover:scale-110 shadow-lg">
@@ -57,10 +62,14 @@ const VideoSection = () => {
             />
             {/* Play Button */}
             <button className="absolute inset-0 flex items-center justify-center">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href={
+               /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+                    ? "mailto:corporate@nikalosafe.ai?subject=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20to%20know%20more%20about%20Nikalo%20Safe."
+                    : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai&su=Discover%20How%20It%20Works&body=Hello%2C%20I%20am%20interested%20in%20learning%20more%20about%20Nikalo%20Safe."
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+
               className="absolute inset-0 flex items-center justify-center"
             >
               <div className="bg-primary hover:bg-red-700 text-white rounded-full p-3 sm:p-4 md:p-5 lg:p-6 transition-all duration-300 transform hover:scale-110 shadow-lg">
