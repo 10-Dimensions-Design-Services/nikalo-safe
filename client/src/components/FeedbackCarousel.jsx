@@ -36,14 +36,14 @@ const feedbacks = [
   {
     photo: feedbackuser4,
     text: "As a structural engineer, I must say that structural stability is the most important aspect of any building. However, nowadays, along with structural stability, the fire safety of the building has also become equally important. While many buildings are designed with fire safety measures, the main problem during a fire emergency is that people are often unable to find the safest exit path. This is where Nikalo Safe comes in - it helps people find the right escape route during a fire. It also assists firefighters by providing detailed information about the building, enabling them to take quick and effective action.",
-    name: "Prasanna",
-    profession: "BE (Civil), MTech Structural Engineer",
+    name: "Prasanna Mutalikdesai",
+    profession: "B.E Civil M.Tech in Structural Engineering",
   },
   {
     photo: feedbackuser5,
     text: "Nikalo Safe helps reduce panic during fire emergencies by providing occupants with precise fire location data. This clarity empowers people to evacuate quickly and calmly, even when guiding children or elderly family members. The system supports self-rescue efforts and increases the chances of protecting every life in the building.",
-    name: "Maruthi",
-    profession: "BE (Civil), MTech Structural Engineer",
+    name: "Maruti Sulebhavikar",
+    profession: "B.E Civil M.Tech in Structural Engineering",
   },
   {
     photo: feedbackuser6,
@@ -72,8 +72,8 @@ const feedbacks = [
   {
     photo: feedbackuser10,
     text: "What I love about the concept is its simplicity. QR codes are inexpensive, universally accessible, and require no app downloads. That means the solution is not just for tech-savvy people — it’s for everyone, everywhere.",
-    name: "Manjusha",
-    profession: "B.Arch",
+    name: "Ar. Manjusha Mahajan",
+    profession: "B.Arch, BIM Architect",
   },
 ];
 
@@ -138,7 +138,7 @@ const FeedbackCarousel = () => {
             <img
               src={photo}
               alt={name}
-              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-white mb-6"
+              className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full object-cover border-4 border-white mb-6"
               loading="lazy"
             />
 
@@ -179,6 +179,11 @@ const FeedbackCarousel = () => {
               >
                 <ChevronRightIcon size={24} />
               </button>
+            </div>
+
+            {/* Card counter */}
+            <div className="mt-4 text-paragraph sm:text-base">
+              {idx + 1} / {feedbacks.length}
             </div>
 
             {/* Dots for mobile */}
