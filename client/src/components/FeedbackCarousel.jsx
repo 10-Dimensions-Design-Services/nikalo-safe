@@ -2,29 +2,78 @@ import React, { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { useSwipeable } from "react-swipeable";
 
-import feedbackuser1 from "../assets/Images/shashank sir.jpeg";
-import feedbackuser2 from "../assets/Images/Vishwajisir.jpeg";
-import feedbackuser3 from "../assets/Images/user2.jpg";
-import feedbackuser4 from "../assets/Images/istockphoto-1348209421-612x612.jpg";
+import feedbackuser1 from "../assets/Images/Vishwajisir.jpeg";
+import feedbackuser2 from "../assets/Images/shashank sir.jpeg";
+import feedbackuser3 from "../assets/Images/CarolWilliams.jpg";
+import feedbackuser4 from "../assets/Images/Prasanna.jpg";
+import feedbackuser5 from "../assets/Images/Maruthi.jpg";
+import feedbackuser6 from "../assets/Images/Devendra.jpg";
+import feedbackuser7 from "../assets/Images/Paparao.jpg";
+import feedbackuser8 from "../assets/Images/Venky.jpg";
+import feedbackuser9 from "../assets/Images/Anand.jpg";
+import feedbackuser10 from "../assets/Images/Manjusha.jpg";
+
 
 const feedbacks = [
   {
     photo: feedbackuser1,
-    text: "As an IT professional, I’ve explored and worked with many modern apps—but Nikalo Safe truly stands out. Developed by the talented team at 10D, this app is not just innovative but also potentially life-saving. It's incredibly user-friendly—like having a personal safety assistant right in your pocket. I’m genuinely impressed by Mr. Dharmendra’s vision and commitment to saving human lives. Hats off. I strongly recommend that all types of establishments—whether commercial buildings, railway stations, malls, museums, resorts, or others—consider investing in safety through Nikalo Safe. A small step towards safety can make a big difference.",
-    name: "Shashank Kulkarni",
-    profession: "Software Professional, Pune, India",
-  },
-  {
-    photo: feedbackuser2,
     text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments. It can give our occupants the confidence that their well-being is being actively protected. It’s surely a smart investment.",
     name: "Vishwajeet Patil",
     profession: "Senior Manager, K Raheja Corp, Mumbai, India",
+  },
+  {
+    photo: feedbackuser2,
+    text: "As an IT professional, I’ve explored and worked with many modern apps—but Nikalo Safe truly stands out. Developed by the talented team at 10D, this app is not just innovative but also potentially life-saving. It's incredibly user-friendly—like having a personal safety assistant right in your pocket. I’m genuinely impressed by Mr. Dharmendra’s vision and commitment to saving human lives. Hats off. I strongly recommend that all types of establishments—whether commercial buildings, railway stations, malls, museums, resorts, or others—consider investing in safety through Nikalo Safe. A small step towards safety can make a big difference.",
+    name: "Shashank Kulkarni",
+    profession: "Software Professional, Pune, India",
   },
   {
     photo: feedbackuser3,
     text: "Nikalo Safe doesn’t just alert - it equips you with the right information at the right time, making all the difference when it matters most.",
     name: "Carol Williams",
     profession: "Electrical, Fire Alarm, Public address system design professional",
+  },
+  {
+    photo: feedbackuser4,
+    text: "As a structural engineer, I must say that structural stability is the most important aspect of any building. However, nowadays, along with structural stability, the fire safety of the building has also become equally important. While many buildings are designed with fire safety measures, the main problem during a fire emergency is that people are often unable to find the safest exit path. This is where Nikalo Safe comes in - it helps people find the right escape route during a fire. It also assists firefighters by providing detailed information about the building, enabling them to take quick and effective action.",
+    name: "Prasanna",
+    profession: "BE (Civil), MTech Structural Engineer",
+  },
+  {
+    photo: feedbackuser5,
+    text: "Nikalo Safe helps reduce panic during fire emergencies by providing occupants with precise fire location data. This clarity empowers people to evacuate quickly and calmly, even when guiding children or elderly family members. The system supports self-rescue efforts and increases the chances of protecting every life in the building.",
+    name: "Maruthi",
+    profession: "BE (Civil), MTech Structural Engineer",
+  },
+  {
+    photo: feedbackuser6,
+    text: "Nikalo Safe can be a game changer safety tool which is connecting physical world to the digital world. It is not just a digital transformation tool for the safety of life but a light in the darkness for the people who may face danger. It is also useful for the fire department who are the brave saviors for the people during such danger situations. This tool can give more precise solutions to them to save the life of the people with more fast pace.",
+    name: "Devendra Shriniwas Rairikar",
+    profession: "B.Arch, M.Arch in Digital Architecture",
+  },
+  {
+    photo: feedbackuser7,
+    text: "If implemented widely, Nikalo Safe could standardize evacuation procedures across buildings, making emergency response far more predictable and organized for both civilians and rescue teams.",
+    name: "Mogali Paparao",
+    profession: "BTech (EEE), MTech Power Electronics",
+  },
+  {
+    photo: feedbackuser8,
+    text: "The brilliance of Nikalo Safe lies in its ability to turn moments of chaos into moments of clarity. By giving people personalized, it transforms fear into action and uncertainty into safety.",
+    name: "Venky Gandrothu",
+    profession: "BTech(CSE), Software Developer",
+  },
+  {
+    photo: feedbackuser9,
+    text: "What excites me most about Nikalo Safe is its simplicity. There’s no app to download, no technical barrier - just a QR code that can guide anyone, anywhere, to safety, while simultaneously helping rescue teams plan their approach.",
+    name: "Anand Kalvakolanu",
+    profession: "BTech(CSE), Software Developer",
+  },
+  {
+    photo: feedbackuser10,
+    text: "What I love about the concept is its simplicity. QR codes are inexpensive, universally accessible, and require no app downloads. That means the solution is not just for tech-savvy people — it’s for everyone, everywhere.",
+    name: "Manjusha",
+    profession: "B.Arch",
   },
 ];
 
