@@ -200,7 +200,6 @@ const FeedbackCarousel = () => {
           </div>
 
 
-
           {/* Arrows for mobile */}
           <div className="lg:hidden flex justify-center items-center space-x-6 mt-6">
             <button
