@@ -6,7 +6,7 @@ const SolutionHeroSection = () => {
       id="solution-hero-section"
       className="pb-24 relative overflow-hidden bg-white"
     >
-      <div className="container-max">
+      <div className="container-max px-2.5">
         <div
           className="relative bg-top bg-cover bg-center bg-no-repeat rounded-lg"
           style={{
@@ -24,7 +24,7 @@ const SolutionHeroSection = () => {
 
           <div className="relative pt-12 pb-12 md:pt-24 px-4 md:px-8">
             <div className="w-full md:w-1/2 text-white">
-              <h1 className="title-h1 mb-4 md:mb-6 leading-tight">
+              <h1 className="title-h1 sm:text-4xl md:text-[32px] lg:text-6xl mb-4 md:mb-6 leading-tight">
                 <span className="text-white">Our </span>
                 <span className="text-primary">Solutions</span>
               </h1>

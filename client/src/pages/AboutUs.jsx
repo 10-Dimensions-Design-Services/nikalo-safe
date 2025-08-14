@@ -1,8 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import TestimonialSection from '../components/TestimonialSection';
-import FeedbackCarousel from '../components/FeedbackCarousel';
 import purposeImage from '../assets/Images/namepurpose.png';
 import missionImage from '../assets/Images/mission.png';
 import TeamImg1 from '../assets/Images/Dpsir.jpeg';
@@ -18,7 +16,7 @@ const AboutUs = () => {
 <section id="about-hero" className="relative overflow-hidden pb-16 md:pb-24">
   <div className="container-max px-2.5">
  <div
-      className="relative bg-cover bg-center bg-no-repeat rounded-lg w-full h-[350px] sm:h-[500px] md:h-[600px] lg:h-[720px] flex items-center"
+      className="relative bg-cover bg-center bg-no-repeat rounded-lg w-full h-[350px] sm:h-[500px] md:h-[600px] lg:h-[720px]"
       style={{
         backgroundImage: "url('/assets/images/about-hero-image.jpg')",
         minHeight: "720px",
@@ -33,7 +31,7 @@ const AboutUs = () => {
         <h2 className="title-h3 md:text-2xl lg:text-3xl mb-4 md:mb-6 text-white">
           Evacuate Smart, Evacuate Safe with Nikalo Safe
         </h2>
-        <p className="paragraph-regular mb-6 md:mb-8 text-base sm:text-lg md:text-xl leading-relaxed w-full text-white max-w-md">
+        <p className="paragraph-bold mb-6 md:mb-8 text-base sm:text-lg md:text-xl leading-relaxed w-full text-white max-w-md">
           In emergency situations, clear and accessible escape routes are vital. Our smart evacuation system guides you through the safest route during emergencies and leads to the safe path and away from danger.
         </p>
       </div>
@@ -134,7 +132,7 @@ const AboutUs = () => {
               <h3 className="title-h4 font-bold text-[#0046BE]">Mr. Dharmendra Patil</h3>
               <p className="text-primary font-semibold">Founder & Director</p>
               <p className="paragraph-regular text-sm text-primary mb-4">
-                BE (Civil), MBA (Project Management), LEED AP BD+C, IGBC AP, FIV, DHL
+                BE (Civil), MBA (Project Management), LEED AP BD+C, IGBC AP, FIV, DHL, CPI in Digital Transformation and AI for Leaders (IIM Indore)
               </p>
               <p className="paragraph-regular text-[#6d6d6d] leading-relaxed overflow-hidden">
               The visionary with decades of experience in various technologies and processes implementation during fire and life safety design, construction and facility management in the buildings, industries and infrastructure sector. He is the innovator of “Digital Twin – Based System and Method for Disaster Management” with <span className='paragraph-bold'>Indian Application Number: 202421054472 filed on 17 July 2024
@@ -157,7 +155,7 @@ const AboutUs = () => {
               <h3 className="title-h4 font-bold text-[#0046BE]">Mr. Maniteja Sundara</h3>
               <p className="text-primary font-semibold">Co-founder & Director</p>
               <p className="text-sm text-primary mb-4">
-                PG Diploma in the Business Management, NMIMS
+                B. Tech (Mechanical) ,PG Diploma in the Business Management, NMIMS
               </p>
               <p className="paragraph-regular text-[#6d6d6d] leading-relaxed overflow-hidden">
                 Mechanical Engineer with experience in applying advanced technologies such as Digital Twin, Smart Facility Management, IoT, Augmented Reality (AR), Virtual Reality (VR), and Cloud-based BIM collaboration platforms. Knowledgeable in integrating trends like building analytics, predictive maintenance, and sustainability-focused design. Skilled in the design and implementation of fire fighting systems across all types of buildings.
@@ -179,9 +177,6 @@ const AboutUs = () => {
               Contact Us
         </Link>
       </section>
-
-      {/* Testimonial section */}
-      <TestimonialSection />
 
       <Footer />
     </div>
