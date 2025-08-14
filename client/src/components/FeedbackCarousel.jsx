@@ -35,7 +35,7 @@ const feedbacks = [
   },
   {
     photo: feedbackuser4,
-    text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments. It can give our occupants the confidence that their well-being is being actively protected. It’s surely a smart investment.",
+    text: "As a structural engineer, I must say that structural stability is the most important aspect of any building. However, nowadays, along with structural stability, the fire safety of the building has also become equally important. While many buildings are designed with fire safety measures, the main problem during a fire emergency is that people are often unable to find the safest exit path. This is where Nikalo Safe comes in - it helps people find the right escape route during a fire. It also assists firefighters by providing detailed information about the building, enabling them to take quick and effective action.",
     name: "Prasanna",
     profession: "BE (Civil), MTech Structural Engineer",
   },
@@ -59,7 +59,7 @@ const feedbacks = [
   },
   {
     photo: feedbackuser8,
-    text: "The brilliance of Nikalo Safe lies in its ability to turn moments of chaos into moments of clarity. By giving people personalized, real-time escape routes, it transforms fear into action and uncertainty into safety.",
+    text: "The brilliance of Nikalo Safe lies in its ability to turn moments of chaos into moments of clarity. By giving people personalized, it transforms fear into action and uncertainty into safety.",
     name: "Venky Gandrothu",
     profession: "BTech(CSE), Software Developer",
   },
