@@ -90,7 +90,7 @@ const isMobile = /Mobi|Android/i.test(navigator.userAgent);
               rel="noopener noreferrer"
               className="hover:text-gray-900 transition-colors"
             >
-              10dimensionsdesign (Parent company)
+              10D Design Services (Parent company)
             </a>
           </li>
           <li>
