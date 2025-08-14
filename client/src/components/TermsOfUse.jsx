@@ -12,7 +12,7 @@ export default function TermsOfUse() {
 
       <p className="mb-4">
         <strong>Welcome to Nikalo Safe.</strong> By accessing or using our web-based fire
-        evacuation and safety assistance system (“Service”), you agree to comply with and be
+        evacuation and safety assistance system (“Solutions”), you agree to comply with and be
         bound by these Terms of Use. If you do not agree with these terms, please do not use our
         services.
       </p>
@@ -53,11 +53,10 @@ export default function TermsOfUse() {
       <section className="mt-6">
         <h2 className="text-xl font-semibold mb-2">4. Intellectual Property</h2>
         <p>
-          All content, software, designs, and materials provided by Nikalo Safe are owned by or licensed to
-          us and are protected by applicable intellectual property laws. You may not copy, modify, distribute,
-          or exploit any part of the Service without our prior written permission.
+          All content, software, designs, and materials provided by Nikalo Safe are owned by or licensed to us and are protected by applicable intellectual property laws. You may not copy, modify, distribute, or exploit any part of the Service without our prior written permission. The intellectual property of Nikalo Safe is covered under Indian Application Number <strong>202421054472</strong> (filed on <strong>17 July 2024</strong>) and PCT Application Number <strong>PCT/IN2025/051041</strong> (filed on <strong>11 July 2025</strong>).
         </p>
       </section>
+
 
       <section className="mt-6">
         <h2 className="text-xl font-semibold mb-2">5. Limitation of Liability</h2>
