@@ -14,6 +14,7 @@ import feedbackuser9 from "../assets/Images/Anand.jpg";
 import feedbackuser10 from "../assets/Images/Manjusha.jpg";
 
 
+
 const feedbacks = [
   {
     photo: feedbackuser1,
@@ -81,15 +82,22 @@ const FeedbackCarousel = () => {
   const [idx, setIdx] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  const prev = () => setIdx((i) => (i === 0 ? feedbacks.length - 1 : i - 1));
-  const next = () => setIdx((i) => (i === feedbacks.length - 1 ? 0 : i + 1));
+  const next = () => {
+    setIdx((prev) => (prev + 1) % feedbacks.length);
+  };
+
+  const prev = () => {
+    setIdx((prev) => (prev - 1 + feedbacks.length) % feedbacks.length);
+  };
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    const checkScreen = () => setIsMobile(window.innerWidth < 1024);
-    checkScreen();
-    window.addEventListener("resize", checkScreen);
-    return () => window.removeEventListener("resize", checkScreen);
-  }, []);
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setIdx((prevIdx) => (prevIdx + 1) % feedbacks.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [isPaused, feedbacks.length]);  
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: next,
@@ -162,41 +170,63 @@ const FeedbackCarousel = () => {
             rel="noopener noreferrer" 
             className="text-sm sm:text-base px-6 py-2 bg-white text-[#333] rounded-full font-medium hover:bg-gray-100 transition mt-2 mb-6 sm:mb-12"> Add Yours </a>
 
-            {/* Arrows for desktop */}
-            <div className="hidden lg:flex absolute inset-y-0 left-0 right-0 items-center justify-between px-4 pointer-events-none z-20">
-              <button
-                onClick={prev}
-                className="pointer-events-auto p-2 sm:p-3 bg-black bg-opacity-50 rounded-full hover:bg-opacity-75 transition"
-                aria-label="Previous feedback"
-              >
-                <ChevronLeftIcon size={24} />
-              </button>
+          {/* Arrows for desktop */}
+          <div className="hidden lg:flex absolute inset-y-0 left-0 right-0 items-center justify-between px-4 pointer-events-none z-20">
+            <button
+              onClick={prev}
+              disabled={idx === 0}
+              className={`pointer-events-auto p-2 sm:p-3 rounded-full transition ${
+                idx === 0
+                  ? "bg-gray-400 opacity-50 cursor-not-allowed"
+                  : "bg-white text-black hover:bg-gray-200"
+              }`}
+              aria-label="Previous feedback"
+            >
+              <ChevronLeftIcon size={24} />
+            </button>
 
-              <button
-                onClick={next}
-                className="pointer-events-auto p-2 sm:p-3 bg-black bg-opacity-50 rounded-full hover:bg-opacity-75 transition"
-                aria-label="Next feedback"
-              >
-                <ChevronRightIcon size={24} />
-              </button>
-            </div>
+            <button
+              onClick={next}
+              disabled={idx === feedbacks.length - 1}
+              className={`pointer-events-auto p-2 sm:p-3 rounded-full transition ${
+                idx === feedbacks.length - 1
+                  ? "bg-gray-400 opacity-50 cursor-not-allowed"
+                  : "bg-white text-black hover:bg-gray-200"
+              }`}
+              aria-label="Next feedback"
+            >
+              <ChevronRightIcon size={24} />
+            </button>
+          </div>
 
-            {/* Card counter */}
-            <div className="mt-4 text-paragraph sm:text-base">
-              {idx + 1} / {feedbacks.length}
-            </div>
 
-            {/* Dots for mobile */}
-            <div className="lg:hidden flex justify-center items-center space-x-2 mb-6">
-              {feedbacks.map((_, i) => (
-                <span
-                  key={i}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    idx === i ? "bg-white scale-110" : "bg-white/80"
-                  }`}
-                />
-              ))}
-            </div>
+          {/* Arrows for mobile */}
+          <div className="lg:hidden flex justify-center items-center space-x-6 mt-6">
+            <button
+              onClick={prev}
+              disabled={idx === 0}
+              className={`p-2 rounded-full transition ${
+                idx === 0
+                  ? "bg-gray-400 opacity-50 cursor-not-allowed"
+                  : "bg-white text-black hover:bg-gray-200"
+              }`}
+            >
+              <ChevronLeftIcon size={20} />
+            </button>
+
+            <button
+              onClick={next}
+              disabled={idx === feedbacks.length - 1}
+              className={`p-2 rounded-full transition ${
+                idx === feedbacks.length - 1
+                  ? "bg-gray-400 opacity-50 cursor-not-allowed"
+                  : "bg-white text-black hover:bg-gray-200"
+              }`}
+            >
+              <ChevronRightIcon size={20} />
+            </button>
+          </div>
+          
           </div>
         </div>
       </div>
