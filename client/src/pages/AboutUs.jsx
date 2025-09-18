@@ -60,7 +60,7 @@ const AboutUs = () => {
             </p>
             <ul className="list-disc list-inside space-y-2 text-base sm:text-lg leading-relaxed">
               <li>
-                <strong>“Nikālo” निक़ालो</strong> – “Exit immediately”
+                <strong>“Nikālo” निकलो</strong> – “Exit immediately”
               </li>
               <li>
                 <strong>“Nikalo” निकालो</strong> – “Help others evacuate”
