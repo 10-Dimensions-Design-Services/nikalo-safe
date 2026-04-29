@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { useSwipeable } from "react-swipeable";
 
-import feedbackuser1 from "../assets/Images/Vishwajisir.jpeg";
 import feedbackuser2 from "../assets/Images/shashank sir.jpeg";
 import feedbackuser3 from "../assets/Images/CarolWilliams.jpg";
 import feedbackuser4 from "../assets/Images/Prasanna.jpg";
@@ -81,6 +80,15 @@ const feedbacks = [
 const FeedbackCarousel = () => {
   const [idx, setIdx] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const next = () => {
     setIdx((prev) => (prev + 1) % feedbacks.length);
@@ -89,15 +97,12 @@ const FeedbackCarousel = () => {
   const prev = () => {
     setIdx((prev) => (prev - 1 + feedbacks.length) % feedbacks.length);
   };
-  const [isPaused, setIsPaused] = useState(false);
-
   useEffect(() => {
-    if (isPaused) return;
     const interval = setInterval(() => {
       setIdx((prevIdx) => (prevIdx + 1) % feedbacks.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [isPaused, feedbacks.length]);  
+  }, []);
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: next,

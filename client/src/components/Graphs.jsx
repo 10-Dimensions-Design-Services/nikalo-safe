@@ -95,8 +95,9 @@ export default function FireStats() {
     
     <section
       // Attach ref for scroll detection
-          className="relative overflow-hidden pt-0 pb-24 bg-white"
-        >
+      ref={ref}
+      className="relative overflow-hidden pt-0 pb-24 bg-white"
+    >
           <div className="container-max px-2.5 md:px-8">
             {/* Section Title */}
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-gray-900">
@@ -157,7 +158,7 @@ export default function FireStats() {
             <div className="w-[140px] sm:w-[160px] lg:w-[180px] h-[70px]">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={lineData}>
-                  <XAxis dataKey="name" hide />  /* Hide x-axis labels for cleaner look */
+                  <XAxis dataKey="name" hide /> {/* Hide x-axis labels for cleaner look */}
                   <Line
                     type="monotone"              /* Smooth curve interpolation */
                     dataKey="val"
