@@ -16,12 +16,12 @@ import feedbackuser10 from "../assets/Images/Manjusha.jpg";
 
 
 const feedbacks = [
-  {
-    photo: feedbackuser1,
-    text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments. It can give our occupants the confidence that their well-being is being actively protected. It’s surely a smart investment.",
-    name: "Vishwajeet Patil",
-    profession: "Senior Manager, K Raheja Corp, Mumbai, India",
-  },
+  // {
+  //   photo: feedbackuser1,
+  //   text: "Safety has become a top priority for modern real estate, especially in high-density commercial spaces. Nikalo Safe will help us strengthen our emergency response and add more value to our developments. It can give our occupants the confidence that their well-being is being actively protected. It’s surely a smart investment.",
+  //   name: "Vishwajeet Patil",
+  //   profession: "Senior Manager, K Raheja Corp, Mumbai, India",
+  // },
   {
     photo: feedbackuser2,
     text: "As an IT professional, I’ve explored and worked with many modern apps—but Nikalo Safe truly stands out. Developed by the talented team at 10D, this app is not just innovative but also potentially life-saving. It's incredibly user-friendly—like having a personal safety assistant right in your pocket. I’m genuinely impressed by Mr. Dharmendra’s vision and commitment to saving human lives. Hats off. I strongly recommend that all types of establishments—whether commercial buildings, railway stations, malls, museums, resorts, or others—consider investing in safety through Nikalo Safe. A small step towards safety can make a big difference.",
