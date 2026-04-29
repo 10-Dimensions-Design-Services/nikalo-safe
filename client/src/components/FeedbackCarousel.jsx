@@ -73,7 +73,7 @@ const feedbacks = [
 
 const FeedbackCarousel = () => {
   const [idx, setIdx] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile] = useState(false);
 
   const next = () => {
     setIdx((prev) => (prev + 1) % feedbacks.length);
@@ -82,7 +82,7 @@ const FeedbackCarousel = () => {
   const prev = () => {
     setIdx((prev) => (prev - 1 + feedbacks.length) % feedbacks.length);
   };
-  const [isPaused, setIsPaused] = useState(false);
+  const [isPaused] = useState(false);
 
   useEffect(() => {
     if (isPaused) return;
@@ -90,7 +90,7 @@ const FeedbackCarousel = () => {
       setIdx((prevIdx) => (prevIdx + 1) % feedbacks.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [isPaused, feedbacks.length]);  
+  }, [isPaused]);
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: next,
