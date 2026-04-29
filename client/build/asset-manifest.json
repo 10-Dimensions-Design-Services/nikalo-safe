@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9d6b45e7.css",
-    "main.js": "/static/js/main.9decd189.js",
+    "main.js": "/static/js/main.3561f7e5.js",
     "static/media/BrandImg.png": "/static/media/BrandImg.00387578b6a41ac0bef8.png",
     "static/media/feature1.png": "/static/media/feature1.3e141ec5fa8f3d5427b0.png",
     "static/media/feature 2.PNG": "/static/media/feature 2.b5f0103d59b003b50572.PNG",
@@ -13,7 +13,6 @@
     "static/media/Video1.png": "/static/media/Video1.400bca4a9c944e654414.png",
     "static/media/Venky.jpg": "/static/media/Venky.a4cfff7a31c0917843f2.jpg",
     "static/media/mission.png": "/static/media/mission.aeec15e561310cc7aa84.png",
-    "static/media/Vishwajisir.jpeg": "/static/media/Vishwajisir.ec1b2a72f4b1dfd65da6.jpeg",
     "static/media/CarolWilliams.jpg": "/static/media/CarolWilliams.7c4d2dff812389861503.jpg",
     "static/media/Anand.jpg": "/static/media/Anand.a02f7e98323dd28024d0.jpg",
     "static/media/Manisir.jpeg": "/static/media/Manisir.75809f839c7989e6a811.jpeg",
@@ -24,10 +23,10 @@
     "static/media/shashank sir.jpeg": "/static/media/shashank sir.4e4cc5e2e43fc7f3fa10.jpeg",
     "index.html": "/index.html",
     "main.9d6b45e7.css.map": "/static/css/main.9d6b45e7.css.map",
-    "main.9decd189.js.map": "/static/js/main.9decd189.js.map"
+    "main.3561f7e5.js.map": "/static/js/main.3561f7e5.js.map"
   },
   "entrypoints": [
     "static/css/main.9d6b45e7.css",
-    "static/js/main.9decd189.js"
+    "static/js/main.3561f7e5.js"
   ]
 }

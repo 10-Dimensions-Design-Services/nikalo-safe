@@ -8,6 +8,18 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToHero = (e) => {
+    e.preventDefault();
+    const heroSection = document.querySelector('#hero-section');
+    if (heroSection) {
+      heroSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="container-max px-2.5">
