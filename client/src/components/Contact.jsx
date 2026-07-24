@@ -46,16 +46,7 @@ const Contact = () => {
               corporate@nikalosafe.ai
             </a>
           </div>
-
-          {/* Address */}
-          <div className="flex items-start gap-4">
-            <MapPin className="text-red-600 w-6 h-6 mt-1" />
-            <p className="text-gray-800 font-medium leading-relaxed">
-              3rd Floor, Shree towers, Jagtap Dairy Rd, opposite 24K Glitterati, <br />
-              near Aundh, Vishal Nagar, Pimple Nilakh, Pune, Maharashtra 411027, India
-            </p>
-          </div>
-
+          
           {/* Phone */}
           <div className="flex items-start gap-4">
             <Phone className="text-red-600 w-6 h-6 mt-1" />
