@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   const [isMobile, setIsMobile] = useState(false);
