@@ -3,8 +3,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import purposeImage from '../assets/Images/namepurpose.png';
 import missionImage from '../assets/Images/mission.png';
-import TeamImg1 from '../assets/Images/Dpsir.jpeg';
-import TeamImg2 from '../assets/Images/Manisir.jpeg';
 import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
