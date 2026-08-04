@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Mail, Phone } from "lucide-react";
+import { Mail} from "lucide-react";
 
 const Contact = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -48,13 +48,14 @@ const Contact = () => {
           </div>
           
           {/* Phone */}
-          <div className="flex items-start gap-4">
+     {/*   <div className="flex items-start gap-4">
             <Phone className="text-red-600 w-6 h-6 mt-1" />
             <div className="text-gray-800 font-medium">
               <a href="tel:+918390703746" className="flex items-center hover:text-gray-900 transition-colors cursor-pointer"><p>+918390703746</p></a>
-              <a href="tel:+918329709173" className="flex items-center hover:text-gray-900 transition-colors cursor-pointer"><p>+918329709173</p></a>
+              <a href="tel:+918329709173" className="flex items-center hover:text-gray-900 transition-colors cursor-pointer"><p>+918329709173</p></a> 
             </div>
-          </div>
+          </div>    
+    */} 
         </div>
       </div>
     </section>
