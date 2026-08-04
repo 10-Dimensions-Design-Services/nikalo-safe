@@ -1,7 +1,7 @@
 // src/components/Footer.js
 import React from "react";
 import { Link } from "react-router-dom";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { SiX } from "react-icons/si";
 
@@ -9,12 +9,12 @@ const Footer = () => {
 const isMobile = /Mobi|Android/i.test(navigator.userAgent);
   return (
     <footer className="bg-white flex flex-col items-center justify-center">
-      <div className="w-full px-4 max-w-screen-xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6 md:gap-y-12 text-sm w-full py-8">
+      <div className="w-full px-6 sm:px-8 lg:px-16 max-w-screen-xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6 md:gap-y-12 text-sm w-full py-10 md:py-12">
           
           {/* Column 1 - Company Info */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-            <h3 className="text-sm md:text-lg font-semibold mb-2 md:mb-4">Nikalo Safe</h3>
+            <h3 className="text-sm md:text-lg font-semibold mb-3 md:mb-4">Nikalo Safe</h3>
                       {/* Email clickable */}
             <a
               href={
@@ -24,13 +24,13 @@ const isMobile = /Mobi|Android/i.test(navigator.userAgent);
               }
               target={isMobile ? "_self" : "_blank"}
               rel="noopener noreferrer"
-              className="text-gray-600 flex items-center gap-1 md:gap-2 text-xs md:text-sm mb-1 md:mb-2 hover:text-gray-900 transition-colors"
+              className="text-gray-600 flex items-center gap-1 md:gap-2 text-xs md:text-sm mb-3 md:mb-4 hover:text-gray-900 transition-colors"
             >
               <Mail className="w-3 h-3 md:w-4 md:h-4 text-red-600" />
               corporate@nikalosafe.ai
             </a>
 
-            <div className="flex flex-col gap-1 md:gap-2 text-gray-600 text-xs md:text-sm mb-2 md:mb-4">
+           {/* <div className="flex flex-col gap-1 md:gap-2 text-gray-600 text-xs md:text-sm mb-2 md:mb-4">
               <span className="flex items-center hover:text-gray-900 transition-colors cursor-pointer">
               <a 
                   href="tel:+918390703746" 
@@ -47,7 +47,7 @@ const isMobile = /Mobi|Android/i.test(navigator.userAgent);
                     <Phone className="w-3 h-3 md:w-4 md:h-4 text-red-600" /> +918329709173
                 </a>
               </span>
-            </div>
+            </div> */}
             <div className="flex gap-3 md:gap-4 justify-center sm:justify-start text-red-600">
               <a href={isMobile ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaInstagram className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
               <a href={isMobile ? "mailto:corporate@nikalosafe.ai" : "https://mail.google.com/mail/?view=cm&fs=1&to=corporate@nikalosafe.ai"} target="_blank" rel="noopener noreferrer"><FaLinkedin className="w-4 h-4 md:w-5 md:h-5 hover:text-gray-900" /></a>
